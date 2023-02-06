@@ -16,3 +16,6 @@ huRegex.test(humStr);
 huRegex.test(hugStr);</code>
 
 Ambas as chamadas de teste retornariam <b>true</b>.
+ <h3>Match Single Character with Multiple Possibilities (Combine um único personagem com múltiplas possibilidades)</h3>
+    <p>Você pode procurar um padrão literal com alguma flexibilidade com classes de caracteres. As classes de caracteres permitem que você defina um grupo de caracteres que deseja corresponder, colocando-os entre colchetes ([ e ]).<br>
+Por exemplo, você deseja combinar "bag, big e bug", mas não "bog". Você pode criar o regex /b[aiu]g/ para fazer isso. O [aiu] é a classe de caracteres que corresponderá apenas aos caracteres a, i ou u.</p>
