@@ -70,3 +70,6 @@ let alphabetRegex = /[a-z]/gi;
 let result = quoteSample.match(alphabetRegex); 
 ```
 <p>⚠️ O método <code>match</code> especifica uma expressão regular e localiza o conteúdo do objeto String em que está aplicada essa expressão. Para saber se essa correspondência atendida ou não, é retornado um valor booleano (true ou false). <b>Fonte:</b> <a href= "https://www.devmedia.com.br/conceitos-basicos-sobre-expressoes-regulares-em-java/27539#:~:text=O%20m%C3%A9todo%20matches%20especifica%20uma,booleano%20(true%20ou%20false).">DEVMEDIA</a></p>
+
+<h2>Combinar Números e Letras do Alfabeto</h2>
+  <p>O uso do hífen <code>(-)</code> para corresponder a um intervalo de caracteres não se limita a letras. Ele também funciona para corresponder a um intervalo de números. Por exemplo, /[0-5]/ corresponde a qualquer número entre 0 e 5, incluindo 0 e 5. Além disso, é possível combinar uma variedade de letras e números em um único conjunto de caracteres.</p>
