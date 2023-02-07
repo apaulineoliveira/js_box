@@ -79,3 +79,12 @@ let jennyStr = "Jenny8675309";
 let myRegex = /[a-z0-9]/ig;
 jennyStr.match(myRegex);
 ```
+<h3>⌨️ Exercitando...</h3>
+  <p>Crie um único regex que corresponda a um intervalo de letras entre <code>h e s</code> e a um intervalo de números entre <code>2 e 6</code>. Lembre-se de incluir os sinalizadores apropriados no regex.</p>
+  
+```
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+let myRegex = /[h-s2-6]/gi; 
+let result = quoteSample.match(myRegex); 
+```
+<h2>Correspondência de caracteres únicos não especificados</h2>
