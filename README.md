@@ -73,3 +73,9 @@ let result = quoteSample.match(alphabetRegex);
 
 <h2>Combinar Números e Letras do Alfabeto</h2>
   <p>O uso do hífen <code>(-)</code> para corresponder a um intervalo de caracteres não se limita a letras. Ele também funciona para corresponder a um intervalo de números. Por exemplo, /[0-5]/ corresponde a qualquer número entre 0 e 5, incluindo 0 e 5. Além disso, é possível combinar uma variedade de letras e números em um único conjunto de caracteres.</p>
+  
+```
+let jennyStr = "Jenny8675309";
+let myRegex = /[a-z0-9]/ig;
+jennyStr.match(myRegex);
+```
