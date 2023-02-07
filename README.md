@@ -36,7 +36,7 @@ bogStr.match(bgRegex);
 ```
 <p>Em ordem, as quatro chamadas de correspondência retornariam os valores ["big"], ["bag"], ["bug"] e nulo.</p>
 
-<h3>Exercitando...</h3>
+<h3>⌨️ Exercitando...</h3>
   <p>Use uma classe de caracteres com vogais (a, e, i, o, u) em sua vogal regex Regex para encontrar todas as vogais na string quoteSample.
 Observação: certifique-se de combinar as vogais maiúsculas e minúsculas.</p>
 
@@ -47,3 +47,17 @@ let result = quoteSample.match(vowelRegex);
 ```
 <h2>Combinar letras do alfabeto</h2>
   <p>Dentro de um conjunto de caracteres, você pode definir um intervalo de caracteres para correspondência usando um hífen: <code>-</code>.Por exemplo, para corresponder letras minúsculas de a a e, você usaria [a-e].</p>
+
+```
+let catStr = "cat";
+let batStr = "bat";
+let matStr = "mat";
+let bgRegex = /[a-e]at/;
+catStr.match(bgRegex);
+batStr.match(bgRegex);
+matStr.match(bgRegex);
+
+```
+<p>Em ordem, as três chamadas de correspondência retornariam os valores ["cat"], ["bat"] e nulo.</p>
+
+<h3>⌨️ Exercitando...</h3>
