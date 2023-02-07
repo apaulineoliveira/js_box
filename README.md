@@ -35,3 +35,13 @@ bogStr.match(bgRegex);
 
 ```
 <p>Em ordem, as quatro chamadas de correspondência retornariam os valores ["big"], ["bag"], ["bug"] e nulo.</p>
+
+<h3>Exercitando...</h3>
+  <p>Use uma classe de caracteres com vogais (a, e, i, o, u) em sua vogal regex Regex para encontrar todas as vogais na string quoteSample.
+Observação: certifique-se de combinar as vogais maiúsculas e minúsculas.</p>
+
+```
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi; 
+let result = quoteSample.match(vowelRegex); 
+```
