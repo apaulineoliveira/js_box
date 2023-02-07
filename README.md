@@ -18,12 +18,13 @@ huRegex.test(humStr);
 huRegex.test(hugStr);</code>
 ```
 <p>Ambas as chamadas de teste retornariam <b>true</b></b>.
- <h3>Combine um único personagem com múltiplas possibilidades</h3>
+
+<h3>Combine um único personagem com múltiplas possibilidades</h3>
     <p>Você pode procurar um padrão literal com alguma flexibilidade com classes de caracteres. As classes de caracteres permitem que você defina um grupo de caracteres que deseja corresponder, colocando-os entre colchetes ([ e ]).<br>
 Por exemplo, você deseja combinar "bag, big e bug", mas não "bog". Você pode criar o regex /b[aiu]g/ para fazer isso. O [aiu] é a classe de caracteres que corresponderá apenas aos caracteres a, i ou u.</p>
 
  ```
- let bigStr = "big";
+let bigStr = "big";
 let bagStr = "bag";
 let bugStr = "bug";
 let bogStr = "bog";
@@ -61,3 +62,10 @@ matStr.match(bgRegex);
 <p>Em ordem, as três chamadas de correspondência retornariam os valores ["cat"], ["bat"] e nulo.</p>
 
 <h3>⌨️ Exercitando...</h3>
+  <p>Combine todas as letras na string quoteSample.Nota: Certifique-se de combinar letras maiúsculas e minúsculas.</p>
+  
+```
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi;
+let result = quoteSample.match(alphabetRegex); 
+```
