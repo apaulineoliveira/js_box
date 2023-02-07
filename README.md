@@ -1,5 +1,5 @@
 
-  <p><b>Objetivo</b>: O objetivo deste repositório é reunir os principais conceitos e práticas utilizadas pela línguagem Javascript com o intuito de fixar e aprimorar os conhecimentos em questões tão cotidianamente usuais ao trabalhar.</p>
+  <p><b>🏒 Objetivo</b>: O objetivo deste repositório é reunir os principais conceitos e práticas utilizadas pela línguagem Javascript com o intuito de fixar e aprimorar os conhecimentos em questões tão cotidianamente usuais ao trabalhar.</p>
   <p>É válido ressaltar que grande parte dos conceitos, exercícios e exemplos presentes neste repositório foram retirados do site <b>FreeCodeCamp.org</b>.</p>
   
 <p align="center">  
@@ -45,3 +45,5 @@ let quoteSample = "Beware of bugs in the above code; I have only proved it corre
 let vowelRegex = /[aeiou]/gi; 
 let result = quoteSample.match(vowelRegex); 
 ```
+<h2>Combinar letras do alfabeto</h2>
+  <p>Dentro de um conjunto de caracteres, você pode definir um intervalo de caracteres para correspondência usando um hífen: <code>-</code>.Por exemplo, para corresponder letras minúsculas de a a e, você usaria [a-e].</p>
