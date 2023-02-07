@@ -34,4 +34,4 @@ bugStr.match(bgRegex);
 bogStr.match(bgRegex);
 
 ```
-
+<p>Em ordem, as quatro chamadas de correspondência retornariam os valores ["big"], ["bag"], ["bug"] e nulo.</p>
