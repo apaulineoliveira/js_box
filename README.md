@@ -133,3 +133,4 @@ let myRegex = /s+/g; // Change this line
 let result = difficultSpelling.match(myRegex);
 
 ```
+<h2>Corresponder a caracteres que ocorram zero ou mais vezes</h2>
