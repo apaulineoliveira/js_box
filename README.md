@@ -7,7 +7,7 @@
 </p>
 
 <h2>Regex</h2>
-<h3>Carácter curinga</h3>
+<h3>Caracter curinga</h3>
     <p>O carácter curinga serve para criar uma combinação de expressões que comumente são aceitáveis. Segundo a definição da FreeCodeCamp compreende por carácter curinga como:<br></br> "O curinga também é chamado de ponto e ponto. Você pode usar o caractere curinga como qualquer outro caractere no regex. Por exemplo, se você quiser corresponder a hug, huh, hut e hum, poderá usar a expressão regular /hu./ para corresponder às quatro palavras." <br></br>Como o exemplo retirado da <a href ="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/regular-expressions/match-anything-with-wildcard-period">FreeCodeCamp</a>:</p>
     
 ```
@@ -41,6 +41,8 @@ bogStr.match(bgRegex);
   <p>Use uma classe de caracteres com vogais (a, e, i, o, u) em sua vogal regex Regex para encontrar todas as vogais na string quoteSample.
 Observação: certifique-se de combinar as vogais maiúsculas e minúsculas.</p>
 
+<p><b>Solução:</b></p>
+
 ```
 let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
 let vowelRegex = /[aeiou]/gi; 
@@ -48,6 +50,8 @@ let result = quoteSample.match(vowelRegex);
 ```
 <h2>Combinar letras do alfabeto</h2>
   <p>Dentro de um conjunto de caracteres, você pode definir um intervalo de caracteres para correspondência usando um hífen: <code>-</code>.Por exemplo, para corresponder letras minúsculas de a a e, você usaria [a-e].</p>
+  
+<p><b>Solução:</b></p>
 
 ```
 let catStr = "cat";
@@ -63,7 +67,9 @@ matStr.match(bgRegex);
 
 <h3>⌨️ Exercitando...</h3>
   <p>Combine todas as letras na string quoteSample.Nota: Certifique-se de combinar letras maiúsculas e minúsculas.</p>
-  
+
+<p><b>Solução:</b></p>
+
 ```
 let quoteSample = "The quick brown fox jumps over the lazy dog.";
 let alphabetRegex = /[a-z]/gi;
@@ -74,6 +80,8 @@ let result = quoteSample.match(alphabetRegex);
 <h2>Combinar Números e Letras do Alfabeto</h2>
   <p>O uso do hífen <code>(-)</code> para corresponder a um intervalo de caracteres não se limita a letras. Ele também funciona para corresponder a um intervalo de números. Por exemplo, /[0-5]/ corresponde a qualquer número entre 0 e 5, incluindo 0 e 5. Além disso, é possível combinar uma variedade de letras e números em um único conjunto de caracteres.</p>
   
+<p><b>Solução:</b></p>  
+  
 ```
 let jennyStr = "Jenny8675309";
 let myRegex = /[a-z0-9]/ig;
@@ -81,6 +89,8 @@ jennyStr.match(myRegex);
 ```
 <h3>⌨️ Exercitando...</h3>
   <p>Crie um único regex que corresponda a um intervalo de letras entre <code>h e s</code> e a um intervalo de números entre <code>2 e 6</code>. Lembre-se de incluir os sinalizadores apropriados no regex.</p>
+  
+<p><b>Solução:</b></p>  
   
 ```
 let quoteSample = "Blueberry 3.141592653s are delicious.";
@@ -92,3 +102,12 @@ let result = quoteSample.match(myRegex);
 
 <h3>⌨️ Exercitando...</h3>
   <p>Crie um único regex que corresponda a todos os caracteres que não sejam um número ou uma vogal. Lembre-se de incluir os sinalizadores apropriados no regex.</p>
+  
+<p><b>Solução:</b></p>
+  
+```
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou^0-9]/gi; 
+let result = quoteSample.match(myRegex); 
+
+```
