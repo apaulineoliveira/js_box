@@ -89,3 +89,6 @@ let result = quoteSample.match(myRegex);
 ```
 <h2>Correspondência de caracteres únicos não especificados</h2>
   <p>O conjunto de caracteres que não deseja corresponder são chamados de <b></b>conjuntos de caracteres negados. Para criá-los basta colocar um caracter de circunflexo (^) após o colchete de abertura e antes dos caracteres que não deseja corresponder. Por exemplo, <code>/[^aeiou]/gi</code> corresponde a todos os caracteres que <b>não</b> são vogais. Observe que caracteres como ., !, [, @, / e espaço em branco são correspondidos - o conjunto de caracteres de vogal negada exclui apenas os caracteres de vogal.</p> 
+
+<h3>⌨️ Exercitando...</h3>
+  <p>Crie um único regex que corresponda a todos os caracteres que não sejam um número ou uma vogal. Lembre-se de incluir os sinalizadores apropriados no regex.</p>
