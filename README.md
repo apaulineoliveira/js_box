@@ -115,3 +115,21 @@ let result = quoteSample.match(myRegex);
   <li><code>i</code>: Ignora letras maiúsculas e minúsculas da pesquisa/correspondência</li>
   <li><code>g</code>: Recupera vários valores; padrão é definido para retornar a primeira correspondência encontrada</li>
   <li><code>^</code>: Nega as correspondências seguindo este emblema</li>
+  
+  
+<h2>Corresponder a caracteres que ocorrem uma ou mais vezes</h2>
+  <p>Às vezes, é preciso corresponder a um caractere (ou grupo de caracteres) que aparece uma ou mais vezes seguidas. Isso significa que ocorre pelo menos uma vez e pode ser repetido. É possível usar o caractere <code>+</code> para verificar se esse é o caso. Lembre-se, o caractere ou padrão deve estar presente consecutivamente. Ou seja, o caracter tem que repetir um após o outro.</p>
+  <p>Por exemplo, <code>/a+/g</code> encontraria uma correspondência em abc e retornaria ["a"]. Por causa do +, ele também encontraria uma única correspondência em <b>aabc</b> e retornaria ["aa"].</p>
+  <p>Se, em vez disso, estivesse verificando a string <b>abab</b>, encontraria duas correspondências e retornaria ["a", "a"] porque os caracteres <code>a</code> não estão em uma linha - há um b entre eles. Finalmente, como não há <code>a</code> na string bcd, ele não encontraria uma correspondência.</p>
+  
+  <h3>⌨️ Exercitando...</h3>
+    <p>Você deseja encontrar correspondências quando a letra <code>s</code> ocorre uma ou mais vezes na palavra <b>Mississippi</b>. Escreva um regex que use o sinal +.</p>
+
+<p><b>Solução:</b></p>
+
+```
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/g; // Change this line
+let result = difficultSpelling.match(myRegex);
+
+```
