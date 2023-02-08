@@ -111,3 +111,7 @@ let myRegex = /[^aeiou^0-9]/gi;
 let result = quoteSample.match(myRegex); 
 
 ```
+<p><b>⚠️ Legenda sobre os sinalizadores</b>:</p>
+  <li><code>i</code>: Ignora letras maiúsculas e minúsculas da pesquisa/correspondência</li>
+  <li><code>g</code>: Recupera vários valores; padrão é definido para retornar a primeira correspondência encontrada</li>
+  <li><code>^</code>: Nega as correspondências seguindo este emblema</li>
