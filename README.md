@@ -174,3 +174,31 @@ firstRegex.test(notFirst);
 ```
 
 <p>A primeira chamada de teste retornaria true, enquanto a segunda retornaria false.</p>
+
+<h2>Correspondência de padrões de string de finalização</h2>
+  <p>Também existe uma maneira de procurar padrões no final das strings. Você pode pesquisar o final das strings usando o caractere cifrão $ no final do regex.</p>
+
+```
+let theEnding = "This is a never ending story";
+let storyRegex = /story$/;
+storyRegex.test(theEnding);
+let noEnding = "Sometimes a story will have to end";
+storyRegex.test(noEnding);
+```
+<p>A primeira chamada de teste retornaria true, enquanto a segunda retornaria false.</p>
+
+<h2>Combine todas as letras e números</h2>
+  <p>A classe de caracteres mais próxima em JavaScript para corresponder ao alfabeto é \w. Este atalho é igual a [A-Za-z0-9_]. Esta classe de caracteres corresponde a letras maiúsculas e minúsculas mais números. Observe que essa classe de caracteres também inclui o caractere de sublinhado (_).</p>
+  
+```
+let longHand = /[A-Za-z0-9_]+/;
+let shortHand = /\w+/;
+let numbers = "42";
+let varNames = "important_var";
+longHand.test(numbers);
+shortHand.test(numbers);
+longHand.test(varNames);
+shortHand.test(varNames);
+
+```
+<p>Todas essas quatro chamadas de teste retornariam true. Essas classes de caracteres de atalho também são conhecidas como classes de caracteres abreviados.</p>
