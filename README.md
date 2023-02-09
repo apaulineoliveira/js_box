@@ -225,3 +225,4 @@ numbers.match(shortHand);
 sentence.match(shortHand);
 
 ```
+<p>A primeira chamada de correspondência retornaria o valor ["%"] e a segunda retornaria ["!"].</p>
