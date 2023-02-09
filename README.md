@@ -216,3 +216,12 @@ let result = quoteSample.match(alphabetRegexV2).length;
 ```
 <h2>Combine tudo menos letras e números</h2>
   <p>No apontamento anterior foi mostrado um atalho para corresponder alfanuméricos <code>[A-Za-z0-9_]</code> usando <code>\w</code>. Um padrão natural que você pode querer pesquisar é o oposto dos alfanuméricos. Você pode procurar o oposto do <code>\w</code> com <code>\W</code>. Observe que o padrão oposto usa uma letra <b>maiúscula</b>. Este atalho é o mesmo que [^A-Za-z0-9_].</p>
+  
+```
+let shortHand = /\W/;
+let numbers = "42%";
+let sentence = "Coding!";
+numbers.match(shortHand);
+sentence.match(shortHand);
+
+```
