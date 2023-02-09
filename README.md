@@ -134,3 +134,27 @@ let result = difficultSpelling.match(myRegex);
 
 ```
 <h2>Corresponder a caracteres que ocorram zero ou mais vezes</h2>
+  <p>Há uma opção que corresponde a caracteres que ocorrem zero ou mais vezes. O caractere para fazer isso é o asterisco ou estrela: <code>*</code>.</p>
+  
+```
+let soccerWord = "gooooooooal!";
+let gPhrase = "gut feeling";
+let oPhrase = "over the moon";
+let goRegex = /go*/;
+soccerWord.match(goRegex);
+gPhrase.match(goRegex);
+oPhrase.match(goRegex);
+
+```
+<p>Em ordem, as três chamadas de correspondência retornariam os valores ["goooooooo"], ["g"] e nulo.</p>
+
+<h3>Exercitando...</h3>
+  <p>Ambos alloFor este desafio, chewieQuote foi inicializado como a string Aaaaaaaaaaaaaaaaarrrgh! Por trás das cenas. Crie um regex chewieRegex que use o caractere * para corresponder a um caractere A maiúsculo imediatamente seguido por zero ou mais caracteres a minúsculos em chewieQuote. Seu regex não precisa de sinalizadores ou classes de caracteres e não deve corresponder a nenhuma das outras aspas.w para qualquer número de ocorrências da mesma letra seguidas, por exemplo,</p>
+  
+<p><b>Solução:</b></p>
+
+```
+let chewieRegex = /Aa*/; 
+let result = chewieQuote.match(chewieRegex);
+
+```
