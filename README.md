@@ -161,3 +161,16 @@ let result = chewieQuote.match(chewieRegex);
 <p>Os desafios anteriores mostraram que as expressões regulares podem ser usadas para procurar várias correspondências. Eles também são usados para procurar padrões em posições específicas em strings.</p>
 
 <h2>Correspondência de padrões iniciais de string</h2>
+  <p>Assim como o circunflexo <code>^</code> dentro de um conjunto de colchetes é utilizado para criar um conjunto de caracteres negados, fora dos colchetes o circunflexo é utilizado para procurar padrões no início de strings. Exemplo:</p>
+  
+```
+
+let firstString = "Ricky is first and can be found.";
+let firstRegex = /^Ricky/;
+firstRegex.test(firstString);
+let notFirst = "You can't find Ricky now.";
+firstRegex.test(notFirst);
+
+```
+
+<p>A primeira chamada de teste retornaria true, enquanto a segunda retornaria false.</p>
