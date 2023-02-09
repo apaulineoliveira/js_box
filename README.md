@@ -158,3 +158,6 @@ let chewieRegex = /Aa*/;
 let result = chewieQuote.match(chewieRegex);
 
 ```
+<p>Os desafios anteriores mostraram que as expressões regulares podem ser usadas para procurar várias correspondências. Eles também são usados para procurar padrões em posições específicas em strings.</p>
+
+<h2>Correspondência de padrões iniciais de string</h2>
