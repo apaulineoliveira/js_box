@@ -226,3 +226,14 @@ sentence.match(shortHand);
 
 ```
 <p>A primeira chamada de correspondência retornaria o valor ["%"] e a segunda retornaria ["!"].</p>
+
+<h3>⌨️ Exercitando...</h3>
+  <p>Use a classe de caractere abreviada <code>\W</code> para contar o número de caracteres não alfanuméricos em várias aspas e strings.</p>
+  
+<p><b>Solução:</b></p>
+
+```
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W+/g;
+let result = quoteSample.match(nonAlphabetRegex).length;
+```
