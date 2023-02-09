@@ -158,3 +158,4 @@ let chewieRegex = /Aa*/;
 let result = chewieQuote.match(chewieRegex);
 
 ```
+<h2>Encontrar caracteres com correspondência "preguiçosa"</h2>
