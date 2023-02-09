@@ -148,7 +148,7 @@ oPhrase.match(goRegex);
 ```
 <p>Em ordem, as três chamadas de correspondência retornariam os valores ["goooooooo"], ["g"] e nulo.</p>
 
-<h3>Exercitando...</h3>
+<h3>⌨️ Exercitando...</h3>
   <p>Ambos alloFor este desafio, chewieQuote foi inicializado como a string Aaaaaaaaaaaaaaaaarrrgh! Por trás das cenas. Crie um regex chewieRegex que use o caractere * para corresponder a um caractere A maiúsculo imediatamente seguido por zero ou mais caracteres a minúsculos em chewieQuote. Seu regex não precisa de sinalizadores ou classes de caracteres e não deve corresponder a nenhuma das outras aspas.w para qualquer número de ocorrências da mesma letra seguidas, por exemplo,</p>
   
 <p><b>Solução:</b></p>
@@ -202,3 +202,15 @@ shortHand.test(varNames);
 
 ```
 <p>Todas essas quatro chamadas de teste retornariam true. Essas classes de caracteres de atalho também são conhecidas como classes de caracteres abreviados.</p>
+
+<h3>⌨️ Exercitando...</h3>
+  <p>Use a classe de caractere abreviada <code>\w</code> para contar o número de caracteres alfanuméricos em várias aspas e strings.</p>
+  
+<p><b>Solução:</b></p>
+
+```
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g;
+let result = quoteSample.match(alphabetRegexV2).length;
+
+```
