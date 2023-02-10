@@ -270,7 +270,7 @@ let result = movieName.match(noNumRegex).length;
     <li>Os nomes de usuário devem ter pelo menos dois caracteres. Um nome de usuário de dois caracteres só pode usar letras do alfabeto como caracteres.</li>
   </ul>
   
-<p>Altere o regex userCheck para ajustar as restrições listadas acima.</p>
+<p>Altere o regex userCheck para ajustar as restrições listadas acima:</p>
 
 ```
 let username = "JackOfAllTrades";
