@@ -271,3 +271,10 @@ let result = movieName.match(noNumRegex).length;
   </ul>
   
 <p>Altere o regex userCheck para ajustar as restrições listadas acima.</p>
+
+```
+let username = "JackOfAllTrades";
+const userCheck = /^[a-z]([0-9]{2,}|[a-z]+\d*)$/i;
+let result = userCheck.test(username);
+```
+
