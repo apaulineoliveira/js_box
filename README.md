@@ -239,12 +239,28 @@ let result = quoteSample.match(nonAlphabetRegex).length;
 ```
 
 <h2>Corresponder a todos os números</h2>
-  <p>O atalho para procurar caracteres de dígitos é \d, com um d minúsculo. Isso é igual à classe de caracteres [0-9], que procura um único caractere de qualquer número entre zero e nove.</p>
-  <p>Use a classe de caractere abreviada \d para contar quantos dígitos existem nos títulos dos filmes. Números escritos ("seis" em vez de 6) não contam.</p>
+  <p>O atalho para procurar caracteres de dígitos é <code>\d</code>, com um d minúsculo. Isso é igual à classe de caracteres [0-9], que procura um único caractere de qualquer número entre zero e nove.</p>
+  <p>Use a classe de caractere abreviada <code>\d</code> para contar quantos dígitos existem nos títulos dos filmes. Números escritos ("seis" em vez de 6) não contam.</p>
   
 ```
 let movieName = "2001: A Space Odyssey";
-let numRegex = /\d/g; // Change this line
+let numRegex = /\d/g; 
 let result = movieName.match(numRegex).length;
 
 ```
+
+<h2>Corresponder a todos os não-números</h2>
+  <p>É também possível procurar por não-dígitos usando um atalho semelhante que usa um D maiúsculo. O atalho para procurar caracteres que não sejam dígitos é <code>\D</code>. Isso é igual à classe de caracteres [^0-9], que procura um único caractere que não seja um número entre zero e nove.</p>
+  <p>Use a classe de caractere abreviada para não-dígitos \D para contar quantos não-dígitos existem em títulos de filmes.</p>
+  
+ ```
+ let movieName = "2001: A Space Odyssey";
+let noNumRegex = /\D/gi; 
+let result = movieName.match(noNumRegex).length;
+
+```
+<h3>⌨️ Exercitando...</h3>
+  <h3>Restringir possíveis nomes de usuário</h3>
+  <p>Escopo: Os nomes de usuário são usados em toda parte na Internet. São eles que dão aos usuários uma identidade única em seus sites favoritos.Você precisa verificar todos os nomes de usuário em um banco de dados.</p>
+  <p>Aqui estão algumas regras simples que os usuários devem seguir ao criar seu nome de usuário.</p>
+  
