@@ -262,5 +262,11 @@ let result = movieName.match(noNumRegex).length;
 <h3>⌨️ Exercitando...</h3>
   <h3>Restringir possíveis nomes de usuário</h3>
   <p>Escopo: Os nomes de usuário são usados em toda parte na Internet. São eles que dão aos usuários uma identidade única em seus sites favoritos.Você precisa verificar todos os nomes de usuário em um banco de dados.</p>
-  <p>Aqui estão algumas regras simples que os usuários devem seguir ao criar seu nome de usuário.</p>
+  <p>Aqui estão algumas regras simples que os usuários devem seguir ao criar seu nome de usuário:</p>
+  <ul>
+    <li>Os nomes de usuário só podem usar caracteres alfanuméricos</li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
   
