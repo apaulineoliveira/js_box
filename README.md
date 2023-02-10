@@ -237,3 +237,14 @@ let quoteSample = "The five boxing wizards jump quickly.";
 let nonAlphabetRegex = /\W+/g;
 let result = quoteSample.match(nonAlphabetRegex).length;
 ```
+
+<h2>Corresponder a todos os números</h2>
+  <p>O atalho para procurar caracteres de dígitos é \d, com um d minúsculo. Isso é igual à classe de caracteres [0-9], que procura um único caractere de qualquer número entre zero e nove.</p>
+  <p>Use a classe de caractere abreviada \d para contar quantos dígitos existem nos títulos dos filmes. Números escritos ("seis" em vez de 6) não contam.</p>
+  
+```
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // Change this line
+let result = movieName.match(numRegex).length;
+
+```
