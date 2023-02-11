@@ -318,4 +318,4 @@ multipleA.test(A4);
 multipleA.test(A2);
 ```
 
-<p>The first test call would return <code>true</code>, while the second would return <code>false</code>.</p>
+<p>A primeira chamada de teste retornaria <code>true</code>, enquanto a segunda retornaria <code>false</code>.</p>
