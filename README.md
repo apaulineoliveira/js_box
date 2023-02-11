@@ -306,3 +306,14 @@ whiteSpace.match(nonSpaceRegex).length;
 ```
 
 <p>O valor retornado pelo método <code>.length</code> seria 32.</p>
+
+<h2>Especifique o número superior e inferior de correspondências</h2>
+  <p>Lembre-se de que você usa o sinal de mais <code>+</code> para procurar um ou mais caracteres e o asterisco <code>*</code> para procurar zero ou mais caracteres. Estes são convenientes, mas às vezes você deseja combinar uma certa variedade de padrões.Por exemplo, para corresponder apenas à letra <code>a</code> que aparece entre 3 e 5 vezes na string <code>ah</code>, sua regex seria <code>/a{3,5}h/</code>.</p>
+  
+```
+let A4 = "aaaah";
+let A2 = "aah";
+let multipleA = /a{3,5}h/;
+multipleA.test(A4);
+multipleA.test(A2);
+```
