@@ -286,3 +286,23 @@ let whiteSpace = "Whitespace. Whitespace everywhere!"
 let spaceRegex = /\s/g;
 whiteSpace.match(spaceRegex);
 ```
+
+<p>Altere a contagem de regex WhiteSpace para procurar vários caracteres de espaço em branco em uma string.</p>
+
+```
+let whiteSpace = "Whitespace. Whitespace everywhere!"
+let spaceRegex = /\s/g;
+whiteSpace.match(spaceRegex);
+
+```
+
+<h2>Corresponder caracteres sem espaço em branco</h2>
+  <p>Você também pode pesquisar tudo, exceto espaços em branco. Pesquise por não-espaço em branco usando <code>\S</code>, que é um <code>s</code> maiúsculo. Esse padrão não corresponderá a espaços em branco, retorno de carro, tabulação, alimentação de formulário e caracteres de nova linha. Você pode pensar nisso como sendo semelhante à classe de caracteres [^ \r\t\f\n\v].</p>
+  
+```
+let whiteSpace = "Whitespace. Whitespace everywhere!"
+let nonSpaceRegex = /\S/g;
+whiteSpace.match(nonSpaceRegex).length;
+```
+
+<p>O valor retornado pelo método <code>.length</code> seria 32.</p>
