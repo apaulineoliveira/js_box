@@ -279,4 +279,10 @@ let result = userCheck.test(username);
 ```
 
 <h2>Corresponder ao espaço em branco</h2>
-  <p></p>
+  <p>Além de letras e números também é possível combinar o espaço em branco ou os espaços entre as letras. Você pode procurar espaços em branco usando <code>\s</code>, que é um s minúsculo. Esse padrão não apenas corresponde a espaços em branco, mas também a caracteres de retorno de carro, tabulação, alimentação de formulário e nova linha. Você pode considerá-la semelhante à classe de caracteres <code>[ \r\t\f\n\v]</code>.</p>
+  
+```
+let whiteSpace = "Whitespace. Whitespace everywhere!"
+let spaceRegex = /\s/g;
+whiteSpace.match(spaceRegex);
+```
