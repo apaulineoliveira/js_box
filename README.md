@@ -1,9 +1,9 @@
 
-  <p><b>🏒 Objetivo</b>: O objetivo deste repositório é reunir os principais conceitos e práticas utilizadas pela línguagem Javascript com o intuito de fixar e aprimorar os conhecimentos em questões tão cotidianamente usuais ao trabalhar.</p>
-  <p>É válido ressaltar que grande parte dos conceitos, exercícios e exemplos presentes neste repositório foram retirados do site <b>FreeCodeCamp.org</b>.</p>
+  <p><b>🎯 Objetivo</b>: O objetivo deste repositório é reunir os principais conceitos e práticas utilizadas pela línguagem Javascript com o intuito de fixar e aprimorar os conhecimentos em questões tão cotidianamente usuais ao trabalhar.</p>
+  <p>É válido ressaltar que grande parte dos conceitos, exercícios e exemplos presentes neste repositório foram retirados do site <a href ="https://www.freecodecamp.org/learn">FreeCodeCamp.org</a></p>
   
 <p align="center">  
-  <img src="https://cdn.pixabay.com/photo/2022/03/21/21/44/file-7084007_960_720.png" height="180" width="200">
+  <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png" height="180" width="200">
 </p>
 
 <h2>Regex</h2>
@@ -399,4 +399,10 @@ rainbowRegex.test(british);
   let result = favRegex.test(favWord);  
   ```
   
-  
+  <h2>Antecipação Positiva e Negativa</h2>
+    <p>Lookaheads são padrões que dizem ao JavaScript para "olhar adiante" em sua string para verificar padrões futuros. Isso pode ser útil quando você deseja pesquisar vários padrões na mesma string. Existem dois tipos de antecipação: antecipação positiva e antecipação negativa:</p>
+    <ul>
+        <li>Positive look ahead</li>
+            <p>Procurará certificar-se de que o elemento no padrão de pesquisa está lá, mas não corresponderá a ele. Um lookahead positivo é usado como <code>(?=...)</code> onde o <code>...</code>. é a parte necessária que não é correspondida.</p>
+        <li>Negative look ahead</li>
+            <p>Procurará garantir que o elemento no padrão de pesquisa <b>não</b> esteja lá. Um lookahead negativo é usado como <code>(?!...)</code>onde o <code>...</code> é o padrão que você não quer que esteja lá. O restante do padrão é retornado se a parte de antecipação negativa não estiver presente.</p>
