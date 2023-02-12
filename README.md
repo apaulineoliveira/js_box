@@ -346,3 +346,6 @@ let haStr = "Hazzzzah";
 let haRegex = /Haz{4,}ah/; 
 let result = haRegex.test(haStr);
 ```
+
+<h2>Especifique o número exato de correspondências</h2>
+  <p>Você pode especificar o número inferior e superior de padrões com especificadores de quantidade usando colchetes. Às vezes, você deseja apenas um número específico de correspondências. Para especificar um certo número de padrões, basta colocar esse número entre as chaves.<br> Por exemplo, para combinar apenas a palavra <code>hah</code> com a letra <code>a</code> 3 vezes, sua regex seria <code>/ha{3}h/</code>.</p>
