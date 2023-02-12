@@ -384,3 +384,19 @@ rainbowRegex.test(american);
 rainbowRegex.test(british);
 ```
 <p>Ambos os usos do método de teste retornariam true.</p>
+
+<h3>⌨️ Exercitando...</h3>
+  <p>Altere o regex <code>timRegex</code> para corresponder à palavra Timber somente quando ela tiver quatro letras <code>m</code>.</p>
+  
+  <p><b>Solução</b></p>
+  <p>Altere o regex favRegex para corresponder à versão da palavra em inglês americano (favorite) e inglês britânico (favourite).</p>
+  
+  <p><b>Solução:</b></p>
+  
+  ```
+  let favWord = "favorite";
+  let favRegex = /favou?rite/;
+  let result = favRegex.test(favWord);  
+  ```
+  
+  
