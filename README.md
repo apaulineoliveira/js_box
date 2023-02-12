@@ -319,3 +319,7 @@ multipleA.test(A2);
 ```
 
 <p>A primeira chamada de teste retornaria <code>true</code>, enquanto a segunda retornaria <code>false</code>.</p>
+
+<h2>Especifique apenas o menor número de correspondências</h2>
+  <p>É possível especificar o número inferior e superior de padrões com especificadores de quantidade usando colchetes. Às vezes, você deseja especificar apenas o número inferior de padrões sem limite superior. Para especificar apenas o menor número de padrões, mantenha o primeiro número seguido por uma vírgula.</p>
+  <p>Por exemplo, para corresponder apenas a string <code>hah</code> com a letra <code>a</code> aparecendo pelo menos 3 vezes, seu regex seria <code>/ha{3,}h/</code>.</p>
