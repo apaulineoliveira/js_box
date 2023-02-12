@@ -349,3 +349,25 @@ let result = haRegex.test(haStr);
 
 <h2>Especifique o número exato de correspondências</h2>
   <p>Você pode especificar o número inferior e superior de padrões com especificadores de quantidade usando colchetes. Às vezes, você deseja apenas um número específico de correspondências. Para especificar um certo número de padrões, basta colocar esse número entre as chaves.<br> Por exemplo, para combinar apenas a palavra <code>hah</code> com a letra <code>a</code> 3 vezes, sua regex seria <code>/ha{3}h/</code>.</p>
+  
+```
+let A4 = "haaaah";
+let A3 = "haaah";
+let A100 = "h" + "a".repeat(100) + "h";
+let multipleHA = /ha{3}h/;
+multipleHA.test(A4);
+multipleHA.test(A3);
+multipleHA.test(A100);
+```
+<p>Em ordem, as três chamadas de teste retornariam false, true e false.</p>
+
+<h3>⌨️ Exercitando...</h3>
+  <p>Altere o regex <code>timRegex</code> para corresponder à palavra Timber somente quando ela tiver quatro letras <code>m</code>.</p>
+  
+  <p><b>Solução</b></p>
+  
+```
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/; 
+let result = timRegex.test(timStr);
+```
