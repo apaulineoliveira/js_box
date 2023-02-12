@@ -371,3 +371,6 @@ let timStr = "Timmmmber";
 let timRegex = /Tim{4}ber/; 
 let result = timRegex.test(timStr);
 ```
+
+<h2>Verificar se há todos ou nenhum</h2>
+  <p>Às vezes, os padrões que você deseja pesquisar podem ter partes que podem ou não existir. No entanto, pode ser importante verificá-los, no entanto. Você pode especificar a possível existência de um elemento com um ponto de interrogação, ?. Isso verifica se há zero ou um dos elementos anteriores. Você pode pensar neste símbolo como dizendo que o elemento anterior é opcional.<br>Por exemplo, existem pequenas diferenças no inglês americano e britânico e você pode usar o ponto de interrogação para corresponder a ambas as grafias.</p>
