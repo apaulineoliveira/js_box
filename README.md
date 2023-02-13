@@ -460,6 +460,24 @@ testRegex.test(testStr);
   <p>Corrija o regex para que ele verifique os nomes de Franklin Roosevelt ou Eleanor Roosevelt com case sensitive (maiúsculas e minúsculas) e deve fazer concessões para nomes do meio. Em seguida, corrija o código para que o regex que você criou seja verificado em relação a myString e verdadeiro ou falso seja retornado dependendo se o regex corresponder.</p>
   
   <p><b>Solução:</b></p>
-  <p></p>
   
-
+```
+let myString = "Eleanor Roosevelt";
+let myRegex = /(Franklin|Eleanor) (([A-Z]\.?|[A-Z][a-z]+) )?Roosevelt/;
+let result = myRegex.test(myString);
+```
+  
+<p>Dicas para solucionar o desafio:</p>
+  <ul>
+     <li>Use <code>a|b</code> para verificar <code>a</code> ou <code>b</code>.</li>
+     <li>Seu regex deve usar agrupamento misto como <code>/P(engu|umpk)in/g</code>.</li>
+     <li>Use <code>*</code> para permitir nomes do meio.</li>
+  </ul>
+  
+   <p><b>Solução:</b></p>
+   
+```
+let myString = "Eleanor Roosevelt";
+let myRegex = /(Franklin|Eleanor) (([A-Z]\.?|[A-Z][a-z]+) )?Roosevelt/;
+let result = myRegex.test(myString);
+```
