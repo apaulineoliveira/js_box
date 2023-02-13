@@ -426,10 +426,23 @@ checkPass.test(password);
 ```
 
 <h3>⌨️ Exercitando...</h3>
-  <p>Use look aheads no <code>pwRegex</code> para corresponder senhas com mais de 5 caracteres e dois dígitos consecutivos.</code>.</p>
+  <p>Use look aheads no <code>pwRegex</code> para corresponder a senhas com mais de 5 caracteres e dois dígitos consecutivos.</code></p>
+ 
+  <p>Dicas para solucionar o desafio:</p>
+    <ul>
+        <li>Lembre-se de usar 2 look aheads para verificar os padrões na string. O primeiro look ahead é muito semelhante ao dado no exemplo anterior: <code>(?=\w{3,6})</code>. A diferença é que este primeiro look ahead é usado apenas para encontrar uma string que consiste em uma certa quantidade de caracteres. Uma segunda verificação à frente deve ser usada para verificar valores numéricos consecutivos.</li>
+        <li>O segundo look ahead também é semelhante ao fornecido no exemplo: <code>(?=\D*\d)</code> no entanto, essa expressão também deve ser modificada para passar em todos os casos de teste. Lembre-se de especificar a quantidade exata de números que deseja que apareçam consecutivamente.</li>
+    </ul>
+ 
+ <br>
   
   <p><b>Solução:</b></p>
   
+```
+let sampleWord = "astronaut";
+let pwRegex =  /(?=\w{6})(?=\w*\d{2})/;
+let result = pwRegex.test(sampleWord);
+```
   
   
   
