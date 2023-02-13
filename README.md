@@ -444,6 +444,9 @@ let sampleWord = "astronaut";
 let pwRegex =  /(?=\w{6})(?=\w*\d{2})/;
 let result = pwRegex.test(sampleWord);
 ```
-  
-  
+
+<h2>Verifique se há agrupamento misto de caracteres</h2>
+  <p>Às vezes queremos verificar grupos de caracteres usando uma expressão regular e, para isso, usamos parênteses (). Se você quiser encontrar <code>Penguin</code> ou <code>Pumpkin</code> em uma string, você pode usar a seguinte Expressão Regular: <code>/P(engu|umpk)in/g</code></p>
+    <p>Em seguida, verifique se os grupos de strings desejados estão na string de teste usando o método test()</p>
+    
   
