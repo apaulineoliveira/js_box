@@ -481,3 +481,11 @@ let myString = "Eleanor Roosevelt";
 let myRegex = /(Franklin|Eleanor) (([A-Z]\.?|[A-Z][a-z]+) )?Roosevelt/;
 let result = myRegex.test(myString);
 ```
+
+<h2>Reutilizar padrões usando grupos de captura</h2>
+  <p>Digamos que você queira corresponder a uma palavra que ocorre várias vezes, como abaixo.</p>
+  
+```
+let repeatStr = "row row row your boat";
+```
+<p>Você poderia usar <code>/row row row/</code>, mas e se você não souber a palavra específica repetida? Os grupos de captura podem ser usados para localizar substrings repetidas.</p>
