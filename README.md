@@ -426,7 +426,7 @@ checkPass.test(password);
 ```
 
 <h3>⌨️ Exercitando...</h3>
-  <p>Use lookaheads no pwRegex para corresponder senhas com mais de 5 caracteres e dois dígitos consecutivos.</code>.</p>
+  <p>Use look aheads no <code>pwRegex</code> para corresponder senhas com mais de 5 caracteres e dois dígitos consecutivos.</code>.</p>
   
   <p><b>Solução:</b></p>
   
