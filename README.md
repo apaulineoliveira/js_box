@@ -488,4 +488,6 @@ let result = myRegex.test(myString);
 ```
 let repeatStr = "row row row your boat";
 ```
-<p>Você poderia usar <code>/row row row/</code>, mas e se você não souber a palavra específica repetida? Os grupos de captura podem ser usados para localizar substrings repetidas.</p>
+<p>Você poderia usar <code>/row row row/</code>, mas e se você não souber a palavra específica repetida? Os grupos de captura podem ser usados para localizar substrings repetidas. Os grupos de captura são construídos colocando o padrão <code>regex</code> a ser capturado entre parênteses. Nesse caso, o objetivo é capturar uma palavra composta por caracteres alfanuméricos de modo que o grupo de captura fique <code>\w+</code> entre parênteses: <code>/(\w+)/</code>.</p>
+
+
