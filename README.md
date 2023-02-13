@@ -455,3 +455,11 @@ let testRegex = /P(engu|umpk)in/;
 testRegex.test(testStr);
 ```
 <p>O método de teste aqui retornaria <code>true</code>.</p>
+
+<h3>⌨️ Exercitando...</h3>
+  <p>Corrija o regex para que ele verifique os nomes de Franklin Roosevelt ou Eleanor Roosevelt com case sensitive (maiúsculas e minúsculas) e deve fazer concessões para nomes do meio. Em seguida, corrija o código para que o regex que você criou seja verificado em relação a myString e verdadeiro ou falso seja retornado dependendo se o regex corresponder.</p>
+  
+  <p><b>Solução:</b></p>
+  <p></p>
+  
+
