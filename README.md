@@ -406,3 +406,21 @@ rainbowRegex.test(british);
             <p>Procurará certificar-se de que o elemento no padrão de pesquisa está lá, mas não corresponderá a ele. Um lookahead positivo é usado como <code>(?=...)</code> onde o <code>...</code>. é a parte necessária que não é correspondida.</p>
         <li>Negative look ahead</li>
             <p>Procurará garantir que o elemento no padrão de pesquisa <b>não</b> esteja lá. Um lookahead negativo é usado como <code>(?!...)</code>onde o <code>...</code> é o padrão que você não quer que esteja lá. O restante do padrão é retornado se a parte de antecipação negativa não estiver presente.</p>
+ ```
+ let quit = "qu";
+let noquit = "qt";
+let quRegex= /q(?=u)/;
+let qRegex = /q(?!u)/;
+quit.match(quRegex);
+noquit.match(qRegex);
+```
+
+<p>Ambas as chamadas de correspondência retornariam <code>["q"]</code>.</p>
+
+<p>Um uso mais prático de lookaheads é verificar dois ou mais padrões em uma string. Aqui está um verificador de senha simples que procura entre 3 e 6 caracteres e pelo menos um número:</p>
+
+```
+let password = "abc123";
+let checkPass = /(?=\w{3,6})(?=\D*\d)/;
+checkPass.test(password);
+```
