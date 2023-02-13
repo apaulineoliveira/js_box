@@ -424,3 +424,12 @@ let password = "abc123";
 let checkPass = /(?=\w{3,6})(?=\D*\d)/;
 checkPass.test(password);
 ```
+
+<h3>⌨️ Exercitando...</h3>
+  <p>Use lookaheads no pwRegex para corresponder senhas com mais de 5 caracteres e dois dígitos consecutivos.</code>.</p>
+  
+  <p><b>Solução:</b></p>
+  
+  
+  
+  
