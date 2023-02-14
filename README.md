@@ -490,10 +490,13 @@ let repeatStr = "row row row your boat";
 ```
 <p>Você poderia usar <code>/row row row/</code>, mas e se você não souber a palavra específica repetida? Os grupos de captura podem ser usados para localizar substrings repetidas. Os grupos de captura são construídos colocando o padrão <code>regex</code> a ser capturado entre parênteses. Nesse caso, o objetivo é capturar uma palavra composta por caracteres alfanuméricos de modo que o grupo de captura fique <code>\w+</code>, entre parênteses: <code>/(\w+)/</code>.</p>
 <br>
-<p>A substring correspondente ao grupo é salva em uma "variável" temporária, que pode ser acessada dentro do mesmo regex usando uma barra invertida e o número do grupo de captura (por exemplo, \1). Os grupos de captura são numerados automaticamente pela posição de seus parênteses de abertura (da esquerda para a direita), começando em 1.<br>O exemplo abaixo corresponde a uma palavra que ocorre três vezes separada por espaços:</p>
+<p>A substring correspondente ao grupo é salva em uma "variável" temporária, que pode ser acessada dentro do mesmo regex usando uma barra invertida e o número do grupo de captura (por exemplo, \1). Os grupos de captura são numerados automaticamente pela posição de seus parênteses de abertura (da esquerda para a direita), começando em 1.</p>
+<br>
+<p>O exemplo abaixo corresponde a uma palavra que ocorre três vezes separada por espaços:</p>
 
 ```
 let repeatRegex = /(\w+) \1 \1/;
 repeatRegex.test(repeatStr); // Returns true
 repeatStr.match(repeatRegex); // Returns ["row row row", "row"]
 ```
+<p>Usar o método .match() em uma string retornará uma matriz com a substring correspondente, junto com seus grupos capturados.</p>
