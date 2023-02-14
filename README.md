@@ -540,7 +540,7 @@ wrongText.replace(silverRegex, "blue");
 <p>A chamada de substituição (replace) retornaria a string "Camp Code".</p>
 
 <h3>⌨️ Exercitando...</h3>
-  <p</p>
+  <p>Escreva um regex <code>fixRegex</code> usando três grupos de captura que procurarão cada palavra na string <code>one two three</code>. Em seguida, atualize a variável <code>replaceText</code> para substituir <code>one two three</code> pela string <code>three two one</code> e atribua o resultado à variável <code>result</code>. <b>Certifique-se de estar utilizando grupos de captura na string de substituição usando a sintaxe de cifrão ($)</b>.</p>
   
   <p><b>Solução:</b></p>
   
