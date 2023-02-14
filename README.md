@@ -521,5 +521,12 @@ let result = reRegex.test(repeatNum);
 ```
 
 <h2>Use grupos de captura para pesquisar e substituir</h2>
-  <p>Pesquisar é útil. No entanto, você pode tornar a pesquisa ainda mais poderosa quando ela também altera (ou substitui) o texto correspondente. Você pode pesquisar e substituir texto em uma string usando <code>.replace()</code> em uma string. As entradas para <code>.replace()</code> são primeiro o padrão regex que você deseja procurar. O segundo parâmetro é a string para substituir a correspondência ou uma função para fazer algo.</p>
+  <p>Pesquisar é útil. No entanto, você pode tornar a pesquisa ainda mais poderosa quando ela também altera (ou substitui) o texto correspondente. Você pode pesquisar e substituir texto em uma string usando <code>.replace()</code> em uma string. As entradas para <code>.replace()</code> são primeiro o padrão regex que você deseja procurar.<br></p>
+<p>O segundo parâmetro é a string para substituir a correspondência ou uma função para fazer algo.</p>
+
+```
+let wrongText = "The sky is silver.";
+let silverRegex = /silver/;
+wrongText.replace(silverRegex, "blue");
+```
   
