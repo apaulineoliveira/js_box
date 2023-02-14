@@ -519,3 +519,7 @@ let repeatNum = "42 42 42";
 let reRegex = /^(\d+) \1 \1(?!.)/; // Change this line
 let result = reRegex.test(repeatNum);
 ```
+
+<h2>Use grupos de captura para pesquisar e substituir</h2>
+  <p>Pesquisar é útil. No entanto, você pode tornar a pesquisa ainda mais poderosa quando ela também altera (ou substitui) o texto correspondente. Você pode pesquisar e substituir texto em uma string usando <code>.replace()</code> em uma string. As entradas para <code>.replace()</code> são primeiro o padrão regex que você deseja procurar. O segundo parâmetro é a string para substituir a correspondência ou uma função para fazer algo.</p>
+  
