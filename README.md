@@ -532,4 +532,18 @@ wrongText.replace(silverRegex, "blue");
 <p></p>
 
 <p>A chamada de substituição retornaria a string "O céu é azul".</p>
-<p>Você também pode acessar os grupos de captura na string de substituição com cifrões <code>($)</code>.</p>
+<p>Você também pode acessar os grupos de captura na string de substituição com cifrões <code>($)</code>:</p>
+
+```
+"Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1');
+```
+<p>A chamada de substituição (replace) retornaria a string "Camp Code".</p>
+
+<h3>⌨️ Exercitando...</h3>
+  <p</p>
+  
+  <p><b>Solução:</b></p>
+  
+  ```
+  
+  ```
