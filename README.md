@@ -500,3 +500,22 @@ repeatRegex.test(repeatStr); // Returns true
 repeatStr.match(repeatRegex); // Returns ["row row row", "row"]
 ```
 <p>Usar o método .match() em uma string retornará uma matriz com a substring correspondente, junto com seus grupos capturados.</p>
+
+<h3>⌨️ Exercitando...</h3>
+  <p>Use grupos de captura em <code>reRegex</code> para corresponder a uma string que consiste apenas no mesmo número repetido exatamente três vezes, separados por espaços simples</p>
+  
+  <p><b>Solução:</b></p>
+  
+```
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+) \1 \1(?!.)/; // Change this line
+let result = reRegex.test(repeatNum);
+```
+  
+<p>Outra solução:</p>
+
+```
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+) \1 \1(?!.)/; // Change this line
+let result = reRegex.test(repeatNum);
+```
