@@ -529,4 +529,7 @@ let wrongText = "The sky is silver.";
 let silverRegex = /silver/;
 wrongText.replace(silverRegex, "blue");
 ```
-  
+<p></p>
+
+<p>A chamada de substituição retornaria a string "O céu é azul".</p>
+<p>Você também pode acessar os grupos de captura na string de substituição com cifrões <code>($)</code>.</p>
