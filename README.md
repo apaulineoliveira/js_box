@@ -544,6 +544,9 @@ wrongText.replace(silverRegex, "blue");
   
   <p><b>Solução:</b></p>
   
-  ```
-  
-  ```
+```
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // Change this line
+let replaceText = "$3 $2 $1";
+let result = str.replace(fixRegex, replaceText);
+```
