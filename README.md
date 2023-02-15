@@ -6,9 +6,22 @@
   <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png" height="180" width="200">
 </p>
 
-<h2>Regex</h2>
-<h3>Caracter curinga</h3>
-    <p>O carácter curinga serve para criar uma combinação de expressões que comumente são aceitáveis. Segundo a definição da FreeCodeCamp compreende por carácter curinga como:<br></br> "O curinga também é chamado de ponto e ponto. Você pode usar o caractere curinga como qualquer outro caractere no regex. Por exemplo, se você quiser corresponder a hug, huh, hut e hum, poderá usar a expressão regular /hu./ para corresponder às quatro palavras." <br></br>Como o exemplo retirado da <a href ="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/regular-expressions/match-anything-with-wildcard-period">FreeCodeCamp</a>:</p>
+<b>Guia de conteúdo</b>
+1. [Regex](#regex)
+2. [Combine um único personagem com múltiplas possibilidades](#multiplaspossibilidades)
+3. [Combinar letras do alfabeto](#combinarletrasdoalfa)
+4. [Combinar números e letras do alfabeto](#combinarnumeroseletrasdoalfa)
+5. [Correspondência de caracteres únicos não especificados](#correspondenciadecaracterunicos)
+6. [Regex](#regex)
+7. [Regex](#regex)
+8. [Regex](#regex)
+
+
+<div id='regex'/>  
+
+<h1>Regex</h1>
+  <h2>Caracter curinga</h2>
+    <p>O caracter curinga serve para criar uma combinação de expressões que comumente são aceitáveis. Segundo a definição da FreeCodeCamp compreende por carácter curinga como:<br></br> "O curinga também é chamado de ponto e ponto. Você pode usar o caractere curinga como qualquer outro caractere no regex. Por exemplo, se você quiser corresponder a hug, huh, hut e hum, poderá usar a expressão regular /hu./ para corresponder às quatro palavras." <br></br>Como o exemplo retirado da <a href ="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/regular-expressions/match-anything-with-wildcard-period">FreeCodeCamp</a>:</p>
     
 ```
 let humStr = "I'll hum a song";
@@ -19,7 +32,9 @@ huRegex.test(hugStr);</code>
 ```
 <p>Ambas as chamadas de teste retornariam <b>true</b></b>.
 
-<h3>Combine um único personagem com múltiplas possibilidades</h3>
+
+<div id='multiplaspossibilidades'/>  
+<h2>Combine um único personagem com múltiplas possibilidades</h2>
     <p>Você pode procurar um padrão literal com alguma flexibilidade com classes de caracteres. As classes de caracteres permitem que você defina um grupo de caracteres que deseja corresponder, colocando-os entre colchetes ([ e ]).<br>
 Por exemplo, você deseja combinar "bag, big e bug", mas não "bog". Você pode criar o regex /b[aiu]g/ para fazer isso. O [aiu] é a classe de caracteres que corresponderá apenas aos caracteres a, i ou u.</p>
 
@@ -37,7 +52,7 @@ bogStr.match(bgRegex);
 ```
 <p>Em ordem, as quatro chamadas de correspondência retornariam os valores ["big"], ["bag"], ["bug"] e nulo.</p>
 
-<h3>⌨️ Exercitando...</h3>
+<h2>⌨️ Exercitando...</h2>
   <p>Use uma classe de caracteres com vogais (a, e, i, o, u) em sua vogal regex Regex para encontrar todas as vogais na string quoteSample.
 Observação: certifique-se de combinar as vogais maiúsculas e minúsculas.</p>
 
@@ -48,6 +63,8 @@ let quoteSample = "Beware of bugs in the above code; I have only proved it corre
 let vowelRegex = /[aeiou]/gi; 
 let result = quoteSample.match(vowelRegex); 
 ```
+
+<div id='combinarletrasdoalfa'/>  
 <h2>Combinar letras do alfabeto</h2>
   <p>Dentro de um conjunto de caracteres, você pode definir um intervalo de caracteres para correspondência usando um hífen: <code>-</code>.Por exemplo, para corresponder letras minúsculas de a a e, você usaria [a-e].</p>
   
@@ -77,6 +94,8 @@ let result = quoteSample.match(alphabetRegex);
 ```
 <p>⚠️ O método <code>match</code> especifica uma expressão regular e localiza o conteúdo do objeto String em que está aplicada essa expressão. Para saber se essa correspondência atendida ou não, é retornado um valor booleano (true ou false). <b>Fonte:</b> <a href= "https://www.devmedia.com.br/conceitos-basicos-sobre-expressoes-regulares-em-java/27539#:~:text=O%20m%C3%A9todo%20matches%20especifica%20uma,booleano%20(true%20ou%20false).">DEVMEDIA</a></p>
 
+
+<div id='combinarnumeroseletrasdoalfa'/>
 <h2>Combinar Números e Letras do Alfabeto</h2>
   <p>O uso do hífen <code>(-)</code> para corresponder a um intervalo de caracteres não se limita a letras. Ele também funciona para corresponder a um intervalo de números. Por exemplo, /[0-5]/ corresponde a qualquer número entre 0 e 5, incluindo 0 e 5. Além disso, é possível combinar uma variedade de letras e números em um único conjunto de caracteres.</p>
   
@@ -97,6 +116,8 @@ let quoteSample = "Blueberry 3.141592653s are delicious.";
 let myRegex = /[h-s2-6]/gi; 
 let result = quoteSample.match(myRegex); 
 ```
+
+<div id='correspondenciadecaracterunicos'/>
 <h2>Correspondência de caracteres únicos não especificados</h2>
   <p>O conjunto de caracteres que não deseja corresponder são chamados de <b></b>conjuntos de caracteres negados. Para criá-los basta colocar um caracter de circunflexo (^) após o colchete de abertura e antes dos caracteres que não deseja corresponder. Por exemplo, <code>/[^aeiou]/gi</code> corresponde a todos os caracteres que <b>não</b> são vogais. Observe que caracteres como ., !, [, @, / e espaço em branco são correspondidos - o conjunto de caracteres de vogal negada exclui apenas os caracteres de vogal.</p> 
 
