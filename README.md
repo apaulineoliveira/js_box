@@ -553,13 +553,16 @@ let result = str.replace(fixRegex, replaceText);
 <h3>Remova o espaço em branco do início e do fim</h3>
   <p>Dicas de como solucionar:</p>
       <ul>
-          <li>Pense em como você pode selecionar substrings no início ou no final de uma string.</li>
+          <li>Pense em como você pode selecionar substrings no início ou no final de uma string</li>
           <li>Pense em como você pode selecionar espaços em branco</li>
       </ul>
-      
- ```
-<br>
+     
+<br></br> 
+
+<p><b>Solução:</b></p>
+
+```
 let hello = "   Hello, World!  ";
-let wsRegex = /^\s+|\s+$/g; // Change this line
-let result = hello.replace(wsRegex, ""); // Change this line
+let wsRegex = /^\s+|\s+$/g; 
+let result = hello.replace(wsRegex, ""); 
 ```
