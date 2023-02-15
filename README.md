@@ -30,8 +30,9 @@
 21. [Verifique se há agrupamento misto de caracteres](#mistocarac)
 22. [Reutilizar padrões usando grupos de captura](#gruposdecapt)
 23. [Use grupos de captura para pesquisar e substituir](#pesquisaresubs)
-24. [Remova o espaço em branco do início e do fim](#espcbrancoinicioefim)
 
+<br></br>
+<br></br>
 
 <div id='regex'/>  
 
