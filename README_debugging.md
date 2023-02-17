@@ -81,3 +81,14 @@ const allSameQuotes = 'I\'ve had a perfectly wonderful evening, but this wasn\'t
 <li>A função deve ser chamada especificamente com variáveis na ordem correta. Caso contrário, a função irá misturar ambas as variáveis e retornará uma resposta indesejada</li>
 <li>Certifique-se de que a variável <code>power</code> esteja implementando a função <code>raiseToPower</code> corretamente.</li>
   </ul>
+
+```
+function raiseToPower(b, e) {
+  return Math.pow(b, e);
+}
+
+let base = 2;
+let exp = 3;
+let power = raiseToPower(base, exp);
+console.log(power);
+```
