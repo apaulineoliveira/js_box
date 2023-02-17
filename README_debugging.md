@@ -51,3 +51,14 @@ let arraySum = myArray.reduce((previous, current) =>  previous + current);
 console.log(`Sum of array values is: ${arraySum}`);
 ```
    
+<h2>Capturar o uso misto de aspas simples e duplas</h2>
+  <p>O JavaScript permite o uso de aspas simples (') e duplas (") para declarar uma string. Decidir qual delas usar geralmente se resume à preferência pessoal, com algumas exceções.Ter duas opções é ótimo quando uma string tem contrações ou outro trecho de texto entre aspas. Apenas tome cuidado para não fechar a string muito cedo, o que causa um erro de sintaxe.</p>
+  
+ <p>Aqui estão alguns exemplos de mistura de aspas:</p>
+ 
+ ```
+const grouchoContraction = "I've had a perfectly wonderful evening, but this wasn't it.";
+const quoteInString = "Groucho Marx once said 'Quote me as saying I was mis-quoted.'";
+const uhOhGroucho = 'I've had a perfectly wonderful evening, but this wasn't it.';
+```
+ 
