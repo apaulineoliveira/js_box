@@ -66,3 +66,18 @@ const uhOhGroucho = 'I've had a perfectly wonderful evening, but this wasn't it.
 ```
 const allSameQuotes = 'I\'ve had a perfectly wonderful evening, but this wasn\'t it.';
 ```
+
+<h2>Capturar argumentos passados na ordem errada ao chamar uma função</h2>
+  <p>Continuando a discussão sobre a chamada de funções, o próximo bug a ser observado é quando os argumentos de uma função são fornecidos na ordem incorreta. Se os argumentos forem de tipos diferentes, como uma função que espera uma matriz e um número inteiro, isso provavelmente gerará um erro de tempo de execução. Se os argumentos forem do mesmo tipo (todos inteiros, por exemplo), a lógica do código não fará sentido. Certifique-se de fornecer todos os argumentos necessários, na ordem correta para evitar esses problemas.</p>
+  <p>A função raiseToPower eleva uma base a um expoente. Infelizmente, não é chamado corretamente - corrija o código para que o valor de power seja o 8 esperado:</p>
+  
+ ```
+ function raiseToPower(b, e) {
+  return Math.pow(b, e);
+}
+```
+  <ul>
+<li>A função acima é usada para elevar o número base <code>b</code> à potência do expoente <code>e</code> </li>
+<li>A função deve ser chamada especificamente com variáveis na ordem correta. Caso contrário, a função irá misturar ambas as variáveis e retornará uma resposta indesejada</li>
+<li>Certifique-se de que a variável <code>power</code> esteja implementando a função <code>raiseToPower</code> corretamente.</li>
+  </ul>
