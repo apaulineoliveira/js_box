@@ -8,3 +8,6 @@
 
 <h2>Conceito</h2>
   <p>A depuração é o processo de analisar seu código, encontrar problemas e corrigi-los. Os problemas no código geralmente vêm em três formas: erros de sintaxe que impedem a execução do programa, erros de tempo de execução nos quais o código tem um comportamento inesperado ou erros lógicos nos quais o código não faz o que você pretendia.</p>
+  
+<h2>Use typeof para verificar o tipo de uma variável</h2>
+  <p>Você pode usar typeof para verificar a estrutura de dados, ou tipo, de uma variável. Isso é útil na depuração ao trabalhar com vários tipos de dados. Se você acha que está adicionando dois números, mas na verdade um deles é uma string, os resultados podem ser inesperados. Erros de tipo podem estar ocultos em cálculos ou chamadas de função. Tenha cuidado especialmente ao acessar e trabalhar com dados externos na forma de um objeto JavaScript Object Notation (JSON).<br>Alguns exemplos utilizando Typeof:</br></p>
