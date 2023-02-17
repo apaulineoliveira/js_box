@@ -61,4 +61,8 @@ const grouchoContraction = "I've had a perfectly wonderful evening, but this was
 const quoteInString = "Groucho Marx once said 'Quote me as saying I was mis-quoted.'";
 const uhOhGroucho = 'I've had a perfectly wonderful evening, but this wasn't it.';
 ```
- 
+<p>As duas primeiras estão corretas, mas a terceira está incorreta.Claro, não há problema em usar apenas um estilo de aspas. Você pode escapar das aspas dentro da string usando o caractere de escape de barra invertida (\):</p>
+
+```
+const allSameQuotes = 'I\'ve had a perfectly wonderful evening, but this wasn\'t it.';
+```
