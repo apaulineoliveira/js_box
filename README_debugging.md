@@ -41,6 +41,8 @@ console.log(`Net working capital is: ${netWorkingCapital}`);
 <p>A saída no console será: Net working capital is: 2</p>
 
 <h2>Capturar parênteses, colchetes, chaves e aspas não fechados</h2>
-   <p>Outro erro de sintaxe a ser observado é que todos os <b>parênteses</b> de abertura, <b>colchetes</b>, <b>chaves</b> e <b>aspas</b> têm um par de fechamento. O esquecimento de uma peça tende a acontecer quando você está editando o código existente e inserindo itens com um dos tipos de par. Além disso, tome cuidado ao aninhar blocos de código em outros, como adicionar uma função de retorno (callback) de chamada como argumento a um método.</p> <br></br>
+   <p>Outro erro de sintaxe a ser observado é que todos os <b>parênteses</b> de abertura, <b>colchetes</b>, <b>chaves</b> e <b>aspas</b> têm um par de fechamento. O esquecimento de uma peça tende a acontecer quando você está editando o código existente e inserindo itens com um dos tipos de par. Além disso, tome cuidado ao aninhar blocos de código em outros, como adicionar uma função de retorno (callback) de chamada como argumento a um método.</p> 
    
-   <p>Uma maneira de evitar esse erro é, assim que o caractere de abertura for digitado, incluir imediatamente a correspondência de fechamento, mover o cursor de volta entre eles e continuar codificando. Felizmente, a maioria dos editores de código modernos gera a segunda metade do par automaticamente. Corrija os erros de dois pares no código:</p>
+   <p>Uma maneira de evitar esse erro é, assim que o caractere de abertura for digitado, incluir imediatamente a correspondência de fechamento, mover o cursor de volta entre eles e continuar codificando. Felizmente, a maioria dos editores de código modernos gera a segunda metade do par automaticamente. Corrijindo os erros de dois pares no código abaixo:</p>
+   ```
+   
