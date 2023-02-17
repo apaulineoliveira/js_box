@@ -22,3 +22,9 @@ console.log(typeof {});
 <p>Em ordem, o console exibirá as strings string, number, object e object.</p>
 
 <p>O JavaScript reconhece sete tipos de dados primitivos (imutáveis): Boolean, Null, Undefined, Number, String, Symbol (novo com ES6) e BigInt (novo com ES2020) e um tipo para itens mutáveis: Object. Observe que em JavaScript, arrays são tecnicamente um tipo de objeto.</p>
+
+
+<h2>Capturar nomes de variáveis e funções com erros ortográficos</h2>
+  <p>Os métodos <code>console.log()</code> e <code>typeof</code> são as duas principais formas de verificar valores intermediários e tipos de saída de programa. Agora é hora de entrar nas formas comuns que os bugs assumem. Um problema de nível de sintaxe que os digitadores rápidos podem lamentar é o humilde erro de ortografia. Caracteres transpostos, ausentes ou capitalizados incorretamente em um nome de variável ou função farão com que o navegador procure um objeto que não existe - e reclame na forma de um erro de referência. Variáveis JavaScript e nomes de funções diferenciam maiúsculas de minúsculas.</p>
+
+<p><b>Corrija os dois erros de ortografia no código para que o cálculo <code>netWorkingCapital</code> funcione</b>:</p>
