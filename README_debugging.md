@@ -11,3 +11,14 @@
   
 <h2>Use typeof para verificar o tipo de uma variável</h2>
   <p>Você pode usar typeof para verificar a estrutura de dados, ou tipo, de uma variável. Isso é útil na depuração ao trabalhar com vários tipos de dados. Se você acha que está adicionando dois números, mas na verdade um deles é uma string, os resultados podem ser inesperados. Erros de tipo podem estar ocultos em cálculos ou chamadas de função. Tenha cuidado especialmente ao acessar e trabalhar com dados externos na forma de um objeto JavaScript Object Notation (JSON).<br>Alguns exemplos utilizando Typeof:</br></p>
+
+```
+console.log(typeof "");
+console.log(typeof 0);
+console.log(typeof []);
+console.log(typeof {});
+```
+
+<p>Em ordem, o console exibirá as strings string, number, object e object.</p>
+
+<p>O JavaScript reconhece sete tipos de dados primitivos (imutáveis): Boolean, Null, Undefined, Number, String, Symbol (novo com ES6) e BigInt (novo com ES2020) e um tipo para itens mutáveis: Object. Observe que em JavaScript, arrays são tecnicamente um tipo de objeto.</p>
