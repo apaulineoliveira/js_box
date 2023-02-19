@@ -92,3 +92,5 @@ let exp = 3;
 let power = raiseToPower(base, exp);
 console.log(power);
 ```
+<h2>Se surpreenda ao encontrar erros ao usar indexação</h2>
+  <p>Os erros <b>Off by one errors</b (às vezes chamados de OBOE) surgem quando você está tentando direcionar um índice específico de uma string ou array (para fatiar ou acessar um segmento) ou ao fazer um loop sobre os índices deles. A indexação JavaScript começa em zero, não em um, o que significa que o último índice é sempre um a menos que o comprimento do item. Se você tentar acessar um índice igual ao comprimento, o programa pode lançar um erro de referência "índice fora do intervalo" ou imprimir indefinido.</p>
