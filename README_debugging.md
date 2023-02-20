@@ -92,5 +92,23 @@ let exp = 3;
 let power = raiseToPower(base, exp);
 console.log(power);
 ```
-<h2>Se surpreenda ao encontrar erros ao usar indexação</h2>
-  <p>Os erros <b>Off by one errors</b (às vezes chamados de OBOE) surgem quando você está tentando direcionar um índice específico de uma string ou array (para fatiar ou acessar um segmento) ou ao fazer um loop sobre os índices deles. A indexação JavaScript começa em zero, não em um, o que significa que o último índice é sempre um a menos que o comprimento do item. Se você tentar acessar um índice igual ao comprimento, o programa pode lançar um erro de referência "índice fora do intervalo" ou imprimir indefinido.</p>
+<h2>Se surpreendendo ao encontrar erros ao usar indexação</h2>
+  <p>Os erros <b>Off by one errors</b> (às vezes chamados de OBOE) surgem quando você está tentando direcionar um índice específico de uma string ou array (para fatiar ou acessar um segmento) ou ao fazer um loop sobre os índices deles. A indexação JavaScript começa em zero, não em um, o que significa que o último índice é sempre um a menos que o comprimento do item. Se você tentar acessar um índice igual ao comprimento, o programa pode lançar um erro de referência "índice fora do intervalo" ou imprimir indefinido.</p>
+  <p>Quando você usa métodos de string ou array que usam intervalos de índice como argumentos, é útil ler a documentação e entender se eles são inclusivos (o item no índice fornecido faz parte do que é retornado) ou não. Aqui estão alguns exemplos de erros off by one:</p>
+  
+  ```
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+let len = alphabet.length;
+for (let i = 0; i <= len; i++) {
+  console.log(alphabet[i]);
+}
+for (let j = 1; j < len; j++) {
+  console.log(alphabet[j]);
+}
+for (let k = 0; k < len; k++) {
+  console.log(alphabet[k]);
+}
+```
+
+<p>O primeiro exemplo é repetido muitas vezes e o segundo é repetido poucas vezes (falta o primeiro índice, 0). O terceiro exemplo está <b>correto</b>.</p>
+  
