@@ -6,13 +6,6 @@
 1. [Conceito](#conceito)
 2. [Use typeof para verificar o tipo de uma variável](#usetypeof)
 3. [Capturar nomes de variáveis e funções com erros ortográficos](#capturarnomes)
-4. [Combinar números e letras do alfabeto](#combinarnumeroseletrasdoalfa)
-5. [Correspondência de caracteres únicos não especificados](#correspondenciadecaracterunicos)
-6. [Corresponder a caracteres que ocorrem uma ou mais vezes](#umoumaisvezes)
-7. [Corresponder a caracteres que ocorram zero ou mais vezes](#zerooumais)
-8. [Correspondência de padrões iniciais de string](#iniciaisdestring)
-9. [Correspondência de padrões de string de finalização](#stringdefinalizacao)
-10. [Combine todas as letras e números](#combinarletrasenumeros)
 
 
  <h1>Debugging</h1>
