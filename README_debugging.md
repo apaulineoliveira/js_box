@@ -6,6 +6,10 @@
 1. [Conceito](#conceito)
 2. [Use typeof para verificar o tipo de uma variável](#usetypeof)
 3. [Capturar nomes de variáveis e funções com erros ortográficos](#capturarnomes)
+4. [Capturar parênteses, colchetes, chaves e aspas não fechados](#capturarcolchetes)
+5. [Capturar o uso misto de aspas simples e duplas](#capturaraspas)
+6. [Capturar argumentos passados na ordem errada ao chamar uma função](#capturarg)
+7. [Se surpreendendo ao encontrar erros ao usar indexação](#surpreendendoaoencontrar)
 
 
  <h1>Debugging</h1>
@@ -52,6 +56,8 @@ console.log(`Net working capital is: ${netWorkingCapital}`);
 ```
 <p>A saída no console será: Net working capital is: 2</p>
 
+<div id="capturarcolchetes"/>
+
 <h2>Capturar parênteses, colchetes, chaves e aspas não fechados</h2>
    <p>Outro erro de sintaxe a ser observado é que todos os <b>parênteses</b> de abertura, <b>colchetes</b>, <b>chaves</b> e <b>aspas</b> têm um par de fechamento. O esquecimento de uma peça tende a acontecer quando você está editando o código existente e inserindo itens com um dos tipos de par. Além disso, tome cuidado ao aninhar blocos de código em outros, como adicionar uma função de retorno (callback) de chamada como argumento a um método.</p> 
    
@@ -62,7 +68,9 @@ let myArray = [1, 2, 3];
 let arraySum = myArray.reduce((previous, current) =>  previous + current);
 console.log(`Sum of array values is: ${arraySum}`);
 ```
-   
+
+<div id="capturaraspas"/>
+  
 <h2>Capturar o uso misto de aspas simples e duplas</h2>
   <p>O JavaScript permite o uso de aspas simples (') e duplas (") para declarar uma string. Decidir qual delas usar geralmente se resume à preferência pessoal, com algumas exceções.Ter duas opções é ótimo quando uma string tem contrações ou outro trecho de texto entre aspas. Apenas tome cuidado para não fechar a string muito cedo, o que causa um erro de sintaxe.</p>
   
@@ -79,6 +87,8 @@ const uhOhGroucho = 'I've had a perfectly wonderful evening, but this wasn't it.
 const allSameQuotes = 'I\'ve had a perfectly wonderful evening, but this wasn\'t it.';
 ```
 
+<div id="capturarg"/>
+  
 <h2>Capturar argumentos passados na ordem errada ao chamar uma função</h2>
   <p>Continuando a discussão sobre a chamada de funções, o próximo bug a ser observado é quando os argumentos de uma função são fornecidos na ordem incorreta. Se os argumentos forem de tipos diferentes, como uma função que espera uma matriz e um número inteiro, isso provavelmente gerará um erro de tempo de execução. Se os argumentos forem do mesmo tipo (todos inteiros, por exemplo), a lógica do código não fará sentido. Certifique-se de fornecer todos os argumentos necessários, na ordem correta para evitar esses problemas.</p>
   <p>A função raiseToPower eleva uma base a um expoente. Infelizmente, não é chamado corretamente - corrija o código para que o valor de power seja o 8 esperado:</p>
@@ -104,6 +114,9 @@ let exp = 3;
 let power = raiseToPower(base, exp);
 console.log(power);
 ```
+  
+<div id="surpreendendoaoencontrar"/>  
+  
 <h2>Se surpreendendo ao encontrar erros ao usar indexação</h2>
   <p>Os erros <b>Off by one errors</b> (às vezes chamados de OBOE) surgem quando você está tentando direcionar um índice específico de uma string ou array (para fatiar ou acessar um segmento) ou ao fazer um loop sobre os índices deles. A indexação JavaScript começa em zero, não em um, o que significa que o último índice é sempre um a menos que o comprimento do item. Se você tentar acessar um índice igual ao comprimento, o programa pode lançar um erro de referência "índice fora do intervalo" ou imprimir indefinido.</p>
   <p>Quando você usa métodos de string ou array que usam intervalos de índice como argumentos, é útil ler a documentação e entender se eles são inclusivos (o item no índice fornecido faz parte do que é retornado) ou não. Aqui estão alguns exemplos de erros off by one:</p>
