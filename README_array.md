@@ -4,13 +4,20 @@
 
 <h1>Array</h1>
   <p>Segundo a documentação da <a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/Arrays">MDN</a> entende-se arrays como uma lista de objetos que contém múltiplos valores armazenados em uma lista.</p>
-  <p>Ambos push() e unshift() têm métodos correspondentes que são praticamente opostos funcionais: pop() e shift(). Como você já deve ter adivinhado, em vez de adicionar, pop() remove um elemento do final de um array, enquanto shift() remove um elemento do início. A principal diferença entre pop() e shift() e seus primos push() e unshift(), é que nenhum dos métodos aceita parâmetros e cada um permite apenas que uma matriz seja modificada por um único elemento por vez.</p>
+  <p>Ambos push( ) e unshift( ) têm métodos correspondentes que são praticamente opostos funcionais: pop( ) e shift( ). Como você já deve ter adivinhado, em vez de adicionar, pop( ) remove um elemento do final de um array, enquanto shift() remove um elemento do início. A principal diferença entre pop( ) e shift( ) e seus primos push( ) e unshift( ), é que nenhum dos métodos aceita parâmetros e cada um permite apenas que uma matriz seja modificada por um único elemento por vez.</p>
   
-  <h3>Exemplo prático do funcionamento do método pop()</h3><br>
+  <h3>Exemplo prático do funcionamento do método pop( )</h3><br>
 
      let greetings = ['whats up?', 'hello', 'see ya!'];
      greetings.pop();
      
  <p><code>greetings</code> teria então o valor de <code>['whats up?', 'hello']</code>. Uma vez que o respectivo método elimina o último item do array.</p>
    
+  <li>Com o método shift() retornaria: <code>['hello']</code>.</li>
+  <li>Também podemos retornar o valor do elemento removido com qualquer método como este:</li>
   
+  ```
+  let popped = greetings.pop();
+  ```
+  <p>Neste caso <code>greetings</code> teria o valor [ ] e <code>popped</code> teria o valor <code>hello</code>.
+      
