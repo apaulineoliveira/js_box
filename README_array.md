@@ -21,3 +21,9 @@
   ```
   <p>Neste caso <code>greetings</code> teria o valor [ ] e <code>popped</code> teria o valor <code>hello</code>.
       
+  <h2>Removendo itens com o método splice( )</h2>
+    <p>Com este método é possível remover itens em qualquer posição do array; o mesmo pode receber até 3 parâmetros. O primeiro parâmetro de splice() representa o índice no array do qual começar a remover elementos, enquanto o segundo parâmetro indica o número de elementos a serem excluídos. Por exemplo: </p>    
+ 
+    let array = ['today', 'was', 'not', 'so', 'great'];
+    array.splice(2, 2);    
+<p>Aqui foi removido 2 elementos, começando com o terceiro elemento (no índice 2). O array então teria o valor ['today', 'was', 'great'].</p>
