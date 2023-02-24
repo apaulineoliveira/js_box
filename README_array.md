@@ -26,4 +26,12 @@
  
     let array = ['today', 'was', 'not', 'so', 'great'];
     array.splice(2, 2);    
-<p>Aqui foi removido 2 elementos, começando com o terceiro elemento (no índice 2). O array então teria o valor ['today', 'was', 'great'].</p>
+  <p>Aqui foi removido 2 elementos, começando com o terceiro elemento (no índice 2). O array então teria o valor ['today', 'was', 'great'].</p>
+  <p>O splice() não apenas modifica o array em que está sendo chamado, mas também retorna um novo array contendo o valor dos elementos removidos:</p>
+  
+  ```
+  let array = ['I', 'am', 'feeling', 'really', 'happy'];
+  let newArray = array.splice(3, 2);
+  ```
+  <p><code>newArray</code> tem o valor <code>['really', 'happy']</code>.</p>
+  
