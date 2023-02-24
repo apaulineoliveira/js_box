@@ -35,3 +35,5 @@
   ```
   <p><code>newArray</code> tem o valor <code>['really', 'happy']</code>.</p>
   
+  <h2>Adicionando itens usando Splice ()</h2>
+    <p>No último tópico foi mencionado que o método Splice() pode levar até três parâmetros. É possível usar o terceiro parâmetro, composto por um ou mais elementos, para adicionar à matriz. Isso pode ser incrivelmente útil para alternar rapidamente um elemento ou um conjunto de elementos, para outro.</p>
