@@ -46,3 +46,4 @@
   console.log(numbers);
   ```
   
+  <p>A segunda ocorrência de 12 é removida e adicionamos 13 e 14 no mesmo índice. A matriz de números agora seria <code>[10, 11, 12, 13, 14, 15]</code>.</p>
