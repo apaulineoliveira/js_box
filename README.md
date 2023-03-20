@@ -632,3 +632,15 @@ let hello = "   Hello, World!  ";
 let wsRegex = /^\s+|\s+$/g; 
 let result = hello.replace(wsRegex, ""); 
 ```
+
+<h3>Adicionando itens com o método splice()</h3>
+  <p>É possível utilizar o terceiro parâmetro do método splice() para adicionar itens ao array.Exemplo:</p>
+  
+    
+    const numbers = [10, 11, 12, 12, 15];
+    const startIndex = 3;
+    const amountToDelete = 1;
+    numbers.splice(startIndex, amountToDelete, 13, 14);
+    console.log(numbers);
+   
+    
