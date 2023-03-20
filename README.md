@@ -652,6 +652,10 @@ let result = hello.replace(wsRegex, "");
     console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
     
     
-<p>Utilizando o método <code>splice</code>:
+<p>Utilizando o método <code>splice</code> no array:</p>
   
+  ```
+  arr.splice(0, 2, "DarkSalmon", "BlanchedAlmond");
+  return arr;  
+  ```
     
