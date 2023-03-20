@@ -643,5 +643,5 @@ let result = hello.replace(wsRegex, "");
     numbers.splice(startIndex, amountToDelete, 13, 14);
     console.log(numbers);
    
- <p>Na segunda ocorrência o <code>12<code> é removido e no lugar foram adicionados os números <code>13</code> e <code>14</code>; ambos no mesmo index. A partir disso o array torna-se <code>[10, 11, 12, 13, 14, 15].</code></p>
+ <p>Na segunda ocorrência o <code>12</code> é removido e no lugar foram adicionados os números <code>13</code> e <code>14</code>; ambos no mesmo index. A partir disso o array retorna <code>[10, 11, 12, 13, 14, 15]</code>.</p>
     
