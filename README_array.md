@@ -49,10 +49,17 @@
   <p>A segunda ocorrência de 12 é removida e adicionamos 13 e 14 no mesmo índice. A matriz de números agora seria <code>[10, 11, 12, 13, 14, 15]</code>.</p>
   
   <h2>Copiando itens do array utilizando <b>slice()</b></h2>
-    <p>É válido ressaltar que o método slice não modifica um array; o mesmo copia ou extrai um determinado número de elementos para um novo array. Este método leva apenas dois parâmetros, o primeiro é o índice no qual irá iniciar a extração e o segundo é o índice no qual irá parar a extração(a extração ocorrerá até, mas não incluindo o elemento neste índice). Como é possível visualizar abaixo:
+    <p>O método slice não modifica um array; o mesmo copia ou extrai um determinado número de elementos para um novo array. Este método leva apenas dois parâmetros, o primeiro é o índice no qual irá iniciar a extração e o segundo é o índice no qual irá parar a extração(a extração ocorrerá até, mas não incluindo o elemento neste índice). Como é possível visualizar abaixo:
 
         
         let weatherConditions = ['rain', 'snow', 'sleet', 'hail', 'clear'];
         let todaysWeather = weatherConditions.slice(1, 3);
         
 <code>todaysWeather</code> teria o valor de ['snow', 'sleet'];</p>
+
+<h2>Copiando um array com o spread operator</h2>
+  <p>É possível copiar um array utilizando spread operator.</p>
+    
+      let thisArray = [true, true, undefined, false, null];
+      let thatArray = [...thisArray];
+ <p><code>thisArray</code> permanece inalterado e <code>thatArray</code> contém os mesmos elementos que <code>thisArray</code>.</p>
