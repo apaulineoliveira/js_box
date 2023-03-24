@@ -633,29 +633,3 @@ let wsRegex = /^\s+|\s+$/g;
 let result = hello.replace(wsRegex, ""); 
 ```
 
-<h2>Adicionando itens com o método splice()</h2>
-  <p>É possível utilizar o terceiro parâmetro do método splice() para adicionar itens ao array.Exemplo:</p>
-  
-    
-    const numbers = [10, 11, 12, 12, 15];
-    const startIndex = 3;
-    const amountToDelete = 1;
-    numbers.splice(startIndex, amountToDelete, 13, 14);
-    console.log(numbers);
-   
-  <p>Na segunda ocorrência o <code>12</code> é removido e no lugar foram adicionados os números <code>13</code> e <code>14</code>; ambos no mesmo index. A partir disso o array retorna <code>[10, 11, 12, 13, 14, 15]</code>.</p>
-
-<p>Utilizando o método <code>splice</code>:</p>
-  <p>Obtenha como base o código abaizxo e o modifique para que as duas primeiras palavras do array sejam substituídas por <code>DarkSalmon</code>, e <code>BlanchedAlmond</code>:</p>
-  
-    
-    console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
-    
-    
-<p>Utilizando o método <code>splice</code> no array:</p>
-  
-  ```
-  arr.splice(0, 2, "DarkSalmon", "BlanchedAlmond");
-  return arr;  
-  ```
-    
