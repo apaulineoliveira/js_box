@@ -63,3 +63,9 @@
       let thisArray = [true, true, undefined, false, null];
       let thatArray = [...thisArray];
  <p><code>thisArray</code> permanece inalterado e <code>thatArray</code> contém os mesmos elementos que <code>thisArray</code>.</p>
+ 
+ <h3>Combinando array com spread operator</h3>
+    <p>Habitualmente é possível combinar arrays através de concatenação, entretanto, dessa forma só seria possível combinar o final de um array com o início de outro. Porém, com o spread operator é possível combiná-las substituindo os seus índices no array. Como é possível conferir abaixo;
+  
+      let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
+      let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
