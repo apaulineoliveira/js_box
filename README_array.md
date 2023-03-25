@@ -86,10 +86,19 @@
  
  <div id="combinandoarraycomspreadoperator"></div>
  <h3>Combinando array com Spread Operator</h3>
-    <p>Habitualmente é possível combinar arrays através de concatenação, entretanto, dessa forma só seria possível combinar o final de um array com o início de outro. Porém, com o spread operator é possível combiná-las substituindo os seus índices no array. Como é possível conferir abaixo;
-  
+    <p>Habitualmente é possível combinar arrays através de concatenação, entretanto, dessa forma só seria possível combinar o final de um array com o início de outro. Porém, com o spread operator é possível combiná-las substituindo os seus índices no array. Como é possível conferir abaixo. É possível observar que <code>thatArray</code> teria o valor de: <code>['brasil', 'cilantro', 'sage', 'rosemary', 'parsley', 'thyme', 'coriander']</code>:</p>
+      
+      
       let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
       let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
-  
-  
-    Sendo assim, o array acima retornaria: <code>thatArray</code> teria o valor de: <code>['brasil', 'cilantro', 'sage', 'rosemary', 'parsley', 'thyme', 'coriander']</code>;
+    
+  <div id="indexof"></div>
+  <h2>Verificando a presença de um elemento com indexOf()</h2>
+    <p>Como os arrays podem ser alterados e modificados a qualquer momento, não há garantia sobre onde um dado específico estará em um determinado array ou se esse elemento ainda existe. Felizmente o Javascript fornece outro método integrado: <code>indexOf()</code>, que permite verificar rápida e facilmente a presença de um elemento em um array.<code>indexOf()</code> recebe um elemento como parâmetro e, quando chamado, retorna a posição ou índice desse elemento, ou <code>-1</code> se o elemento não existir no array. Como é possível ver abaixo:</p>
+    
+   ``` 
+   let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
+   fruits.indexOf('dates');
+   fruits.indexOf('oranges');
+   fruits.indexOf('pears');
+   ```
