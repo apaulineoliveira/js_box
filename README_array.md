@@ -69,3 +69,6 @@
   
       let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
       let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
+  
+  
+    Sendo assim, o array acima retornaria: <code>thatArray</code> teria o valor de: <code>['brasil', 'cilantro', 'sage', 'rosemary', 'parsley', 'thyme', 'coriander']</code>;
