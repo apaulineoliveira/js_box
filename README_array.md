@@ -4,6 +4,33 @@
 
 <p>É válido ressaltar que todos os conteúdos desse readme foram retirados do site oficial da <b>MDN</b>.</p>
 
+<b>Guia de conteúdo</b>
+1. [Regex](#regex)
+2. [Combine um único personagem com múltiplas possibilidades](#multiplaspossibilidades)
+3. [Combinar letras do alfabeto](#combinarletrasdoalfa)
+4. [Combinar números e letras do alfabeto](#combinarnumeroseletrasdoalfa)
+5. [Correspondência de caracteres únicos não especificados](#correspondenciadecaracterunicos)
+6. [Corresponder a caracteres que ocorrem uma ou mais vezes](#umoumaisvezes)
+7. [Corresponder a caracteres que ocorram zero ou mais vezes](#zerooumais)
+8. [Correspondência de padrões iniciais de string](#iniciaisdestring)
+9. [Correspondência de padrões de string de finalização](#stringdefinalizacao)
+10. [Combine todas as letras e números](#combinarletrasenumeros)
+11. [Combine tudo menos letras e números](#menosletrasenumenros)
+12. [Corresponder a todos os números](#todososnumeros)
+13. [Corresponder a todos os não-números](#cornaonumeros)
+14. [Corresponder ao espaço em branco](#espacoembranco)
+15. [Corresponder caracteres sem espaço em branco](#semespacoembranco)
+16. [Especifique o número superior e inferior de correspondências](#superioreinferior)
+17. [Especifique apenas o menor número de correspondências](#menordecorres)
+18. [Especifique o número exato de correspondências](#exatodecorresp)
+19. [Verificar se há todos ou nenhum](#todosounenhum)
+20. [Antecipação Positiva e Negativa](#antecpnegouposi)
+21. [Verifique se há agrupamento misto de caracteres](#mistocarac)
+22. [Reutilizar padrões usando grupos de captura](#gruposdecapt)
+23. [Use grupos de captura para pesquisar e substituir](#pesquisaresubs)
+
+<br></br>
+
 <h1>Array</h1>
   <p>Segundo a documentação da <a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/Arrays">MDN</a> entende-se arrays como uma lista de objetos que contém múltiplos valores armazenados em uma lista.</p>
   <p>Ambos push( ) e unshift( ) têm métodos correspondentes que são praticamente opostos funcionais: pop( ) e shift( ). Como você já deve ter adivinhado, em vez de adicionar, pop( ) remove um elemento do final de um array, enquanto shift() remove um elemento do início. A principal diferença entre pop( ) e shift( ) e seus primos push( ) e unshift( ), é que nenhum dos métodos aceita parâmetros e cada um permite apenas que uma matriz seja modificada por um único elemento por vez.</p>
