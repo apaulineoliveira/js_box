@@ -8,10 +8,10 @@
 1. [Array](#array)
 2. [Exemplo prático do funcionamento do método pop( )](#pop)
 3. [Removendo itens com o método splice( )](#splice)
-4. [Combinar números e letras do alfabeto](#combinarnumeroseletrasdoalfa)
-5. [Correspondência de caracteres únicos não especificados](#correspondenciadecaracterunicos)
-6. [Corresponder a caracteres que ocorrem uma ou mais vezes](#umoumaisvezes)
-7. [Corresponder a caracteres que ocorram zero ou mais vezes](#zerooumais)
+4. [Adicionando itens usando splice( )](#itensusandosplice)
+5. [Copiando itens do array utilizando <b>slice</b>( )](#copiandoarraycomslice)
+6. [Copiando array com Spread Operator](#copiandocomspreadoperator)
+7. [Combinando array com Spread Operator](#combinandoarraycomspreadoperator)
 8. [Correspondência de padrões iniciais de string](#iniciaisdestring)
 9. [Correspondência de padrões de string de finalização](#stringdefinalizacao)
 10. [Combine todas as letras e números](#combinarletrasenumeros)
@@ -67,6 +67,7 @@
   ```
   <p><code>newArray</code> tem o valor <code>['really', 'happy']</code>.</p>
   
+  <div id="itensusandosplice"></div>
   <h3>Adicionando itens usando Splice( )</h3>
     <p>No último tópico foi mencionado que o método Splice() pode levar até três parâmetros. É possível usar o terceiro parâmetro, composto por um ou mais elementos, para adicionar à matriz. Isso pode ser incrivelmente útil para alternar rapidamente um elemento ou um conjunto de elementos, para outro.</p>
     
@@ -80,6 +81,7 @@
   
   <p>A segunda ocorrência de 12 é removida e adicionamos 13 e 14 no mesmo índice. A matriz de números agora seria <code>[10, 11, 12, 13, 14, 15]</code>.</p>
   
+  <div id="copiandoarraycomslice"></div>
   <h2>Copiando itens do array utilizando <b>slice()</b></h2>
     <p>O método slice não modifica um array; o mesmo copia ou extrai um determinado número de elementos para um novo array. Este método leva apenas dois parâmetros, o primeiro é o índice no qual irá iniciar a extração e o segundo é o índice no qual irá parar a extração(a extração ocorrerá até, mas não incluindo o elemento neste índice). Como é possível visualizar abaixo:
 
@@ -89,13 +91,15 @@
         
 <code>todaysWeather</code> teria o valor de ['snow', 'sleet'];</p>
 
-<h2>Copiando um array com o spread operator</h2>
-  <p>É possível copiar um array utilizando spread operator.</p>
+<div id="copiandocomspreadoperator"></div>
+<h2>Copiando um array com o Spread Operator</h2>
+  <p>É possível copiar um array utilizando Spread Operator.</p>
     
       let thisArray = [true, true, undefined, false, null];
       let thatArray = [...thisArray];
  <p><code>thisArray</code> permanece inalterado e <code>thatArray</code> contém os mesmos elementos que <code>thisArray</code>.</p>
  
+ <div id="combinanoarraycomspreadoperator"></div>
  <h3>Combinando array com spread operator</h3>
     <p>Habitualmente é possível combinar arrays através de concatenação, entretanto, dessa forma só seria possível combinar o final de um array com o início de outro. Porém, com o spread operator é possível combiná-las substituindo os seus índices no array. Como é possível conferir abaixo;
   
