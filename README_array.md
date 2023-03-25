@@ -12,22 +12,7 @@
 5. [Copiando itens do array utilizando <b>slice</b>( )](#copiandoarraycomslice)
 6. [Copiando array com Spread Operator](#copiandocomspreadoperator)
 7. [Combinando array com Spread Operator](#combinandoarraycomspreadoperator)
-8. [Correspondência de padrões iniciais de string](#iniciaisdestring)
-9. [Correspondência de padrões de string de finalização](#stringdefinalizacao)
-10. [Combine todas as letras e números](#combinarletrasenumeros)
-11. [Combine tudo menos letras e números](#menosletrasenumenros)
-12. [Corresponder a todos os números](#todososnumeros)
-13. [Corresponder a todos os não-números](#cornaonumeros)
-14. [Corresponder ao espaço em branco](#espacoembranco)
-15. [Corresponder caracteres sem espaço em branco](#semespacoembranco)
-16. [Especifique o número superior e inferior de correspondências](#superioreinferior)
-17. [Especifique apenas o menor número de correspondências](#menordecorres)
-18. [Especifique o número exato de correspondências](#exatodecorresp)
-19. [Verificar se há todos ou nenhum](#todosounenhum)
-20. [Antecipação Positiva e Negativa](#antecpnegouposi)
-21. [Verifique se há agrupamento misto de caracteres](#mistocarac)
-22. [Reutilizar padrões usando grupos de captura](#gruposdecapt)
-23. [Use grupos de captura para pesquisar e substituir](#pesquisaresubs)
+
 
 <br></br>
 
@@ -99,8 +84,8 @@
       let thatArray = [...thisArray];
  <p><code>thisArray</code> permanece inalterado e <code>thatArray</code> contém os mesmos elementos que <code>thisArray</code>.</p>
  
- <div id="combinanoarraycomspreadoperator"></div>
- <h3>Combinando array com spread operator</h3>
+ <div id="combinandoarraycomspreadoperator"></div>
+ <h3>Combinando array com Spread Operator</h3>
     <p>Habitualmente é possível combinar arrays através de concatenação, entretanto, dessa forma só seria possível combinar o final de um array com o início de outro. Porém, com o spread operator é possível combiná-las substituindo os seus índices no array. Como é possível conferir abaixo;
   
       let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
