@@ -5,9 +5,9 @@
 <p>É válido ressaltar que todos os conteúdos desse readme foram retirados do site oficial da <b>MDN</b>.</p>
 
 <b>Guia de conteúdo</b>
-1. [Regex](#regex)
-2. [Combine um único personagem com múltiplas possibilidades](#multiplaspossibilidades)
-3. [Combinar letras do alfabeto](#combinarletrasdoalfa)
+1. [Array](#array)
+2. [Exemplo prático do funcionamento do método pop( )](#pop)
+3. [Removendo itens com o método splice( )](#splice)
 4. [Combinar números e letras do alfabeto](#combinarnumeroseletrasdoalfa)
 5. [Correspondência de caracteres únicos não especificados](#correspondenciadecaracterunicos)
 6. [Corresponder a caracteres que ocorrem uma ou mais vezes](#umoumaisvezes)
@@ -31,10 +31,12 @@
 
 <br></br>
 
+<div id="array"></div>
 <h1>Array</h1>
   <p>Segundo a documentação da <a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/Arrays">MDN</a> entende-se arrays como uma lista de objetos que contém múltiplos valores armazenados em uma lista.</p>
   <p>Ambos push( ) e unshift( ) têm métodos correspondentes que são praticamente opostos funcionais: pop( ) e shift( ). Como você já deve ter adivinhado, em vez de adicionar, pop( ) remove um elemento do final de um array, enquanto shift() remove um elemento do início. A principal diferença entre pop( ) e shift( ) e seus primos push( ) e unshift( ), é que nenhum dos métodos aceita parâmetros e cada um permite apenas que uma matriz seja modificada por um único elemento por vez.</p>
   
+  <div id="pop">Exemplo prático do funcionamento do método pop()</div>
   <h3>Exemplo prático do funcionamento do método pop( )</h3><br>
 
      let greetings = ['whats up?', 'hello', 'see ya!'];
@@ -49,7 +51,8 @@
   let popped = greetings.pop();
   ```
   <p>Neste caso <code>greetings</code> teria o valor [ ] e <code>popped</code> teria o valor <code>hello</code>.
-      
+  
+  <div id="splice"></div>  
   <h2>Removendo itens com o método splice( )</h2>
     <p>Com este método é possível remover itens em qualquer posição do array; o mesmo pode receber até 3 parâmetros. O primeiro parâmetro de splice() representa o índice no array do qual começar a remover elementos, enquanto o segundo parâmetro indica o número de elementos a serem excluídos. Por exemplo: </p>    
  
