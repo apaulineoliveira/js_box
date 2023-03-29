@@ -14,7 +14,7 @@
 7. [Combinando array com Spread Operator](#combinandoarraycomspreadoperator)
 8. [Verificando a presença de um elemento com indexOf( )](#indexof)
 9. [Iterar todos os itens de uma matriz usando Loops For](#iterarcomloops)
-
+10. [Crie matrizes multidimensionais complexas](#matrizmultidimensional)
 <br></br>
 
 <div id="array"></div>
@@ -107,8 +107,9 @@
   <div id="iterarcomloops">
   <h2>Iterar todos os itens de uma matriz usando Loops For</h2>
       <p>JavaScript oferece vários métodos integrados que iteram sobre arrays de maneiras ligeiramente diferentes para obter resultados diferentes, como: every(), forEach(), map(), etc, no entanto, a técnica que é mais flexível e nos oferece o maior quantidade de controle é um <b>loop for</b> simples.</p>
+  
       
-```
+````
 function greaterThanTen(arr) {
   let newArr = [];
   for (let i = 0; i < arr.length; i++) {
@@ -119,3 +120,13 @@ function greaterThanTen(arr) {
   return newArr;
 }
 greaterThanTen([2, 12, 8, 14, 80, 0, 1]); 
+````
+  
+  
+  
+  
+  
+<div id="matrizmultidimensional">
+  <h2>Crie matrizes multidimensionais complexas</h2>
+    <p>Matrizes multidimensionais</p>
+    
