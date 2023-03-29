@@ -12,7 +12,7 @@
 5. [Copiando itens do array utilizando <b>slice</b>( )](#copiandoarraycomslice)
 6. [Copiando array com Spread Operator](#copiandocomspreadoperator)
 7. [Combinando array com Spread Operator](#combinandoarraycomspreadoperator)
-
+8. [Verificando a presença de um elemento com indexOf( )](#indexof)
 
 <br></br>
 
