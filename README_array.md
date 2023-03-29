@@ -102,5 +102,19 @@
    fruits.indexOf('oranges');
    fruits.indexOf('pears');
    ```
+   
+   
   <h2>Iterar todos os itens de uma matriz usando Loops For</h2>
-      <p>JavaScript oferece vários métodos integrados que iteram sobre arrays de maneiras ligeiramente diferentes para obter resultados diferentes como every(), forEach(), map(), etc, no entanto, a técnica que é mais flexível e nos oferece o maior quantidade de controle é um loop for simples.</p>
+      <p>JavaScript oferece vários métodos integrados que iteram sobre arrays de maneiras ligeiramente diferentes para obter resultados diferentes, como: every(), forEach(), map(), etc, no entanto, a técnica que é mais flexível e nos oferece o maior quantidade de controle é um <b>loop for</b> simples.</p>
+      
+```
+function greaterThanTen(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 10) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
+greaterThanTen([2, 12, 8, 14, 80, 0, 1]); 
