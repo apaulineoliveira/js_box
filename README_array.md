@@ -15,6 +15,7 @@
 8. [Verificando a presença de um elemento com indexOf( )](#indexof)
 9. [Iterar todos os itens de uma matriz usando Loops For](#iterarcomloops)
 10. [Crie matrizes multidimensionais complexas](#matrizmultidimensional)
+11. [](#)
 <br></br>
 
 <div id="array"></div>
@@ -127,6 +128,6 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   
   
 <div id="matrizmultidimensional">
-  <h2>Crie matrizes multidimensionais complexas</h2>
-    <p>Matrizes multidimensionais</p>
+  <h2>Criando matrizes multidimensionais complexas</h2>
+    <p>Uma das características mais úteis e poderosas quando se trata de arrays é sua capacidade multidimensional. Os arrays podem conter outras arrays cada uma com os seus próprios níveis arbritrários de profundidade, sendo cada array com seus próprios níveis. Essa estrutura complexa também pode ser chamada de <b>matriz aninhada</b>.</p>
     
