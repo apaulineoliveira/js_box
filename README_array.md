@@ -102,3 +102,5 @@
    fruits.indexOf('oranges');
    fruits.indexOf('pears');
    ```
+  <h2>Iterar todos os itens de uma matriz usando Loops For</h2>
+      <p></p>
