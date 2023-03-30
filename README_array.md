@@ -131,3 +131,7 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   <h2>Criando matrizes multidimensionais complexas</h2>
     <p>Uma das características mais úteis e poderosas quando se trata de arrays é sua capacidade multidimensional. Os arrays podem conter outras arrays cada uma com os seus próprios níveis arbritrários de profundidade, sendo cada array com seus próprios níveis. Essa estrutura complexa também pode ser chamada de <b>matriz aninhada</b>.</p>
     
+  
+  <h2><Adicionar Pares de Valor-Chave(Key-Value) a Objectos JavaScript</h2>
+    
+    
