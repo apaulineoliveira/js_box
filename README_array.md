@@ -138,4 +138,17 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   
  <h2>Adicionar Pares de Valor-Chave(Key-Value) a Objetos JavaScript</h2>
     <p>Basicamente, objetos são apenas coleções de chave-valor. Em outras palavras, são pedaços de dados (valores) mapeados para identificadores únicos chamados de  propriedades (chaves). Exemplo:</p>
-    
+  
+  ```
+  const tekkenCharacter = {
+  player: 'Hwoarang',
+  fightingStyle: 'Tae Kwon Doe',
+  human: true
+  };
+  ```
+  <p>O código acima define um objeto de personagem de videogame <b>Tekken</b> chamado <code>tekkenCharacter</code>. Ele tem três propriedades, cada uma mapeando para um valor específico. Se você quiser adicionar uma propriedade adicional, como <code>"origin"</code>, isso pode ser feito atribuindo origem ao objeto:</p>   
+  
+  ```
+  tekkenCharacter.origin = 'South Korea';
+  ```
+  <p>Isso usa a notação de ponto (dot notation). Se você observar o objeto tekkenCharacter, ele agora incluirá a propriedade origin.</p>
