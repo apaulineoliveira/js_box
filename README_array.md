@@ -133,5 +133,5 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
     
   
  <h2>Adicionar Pares de Valor-Chave(Key-Value) a Objetos JavaScript</h2>
-    <p>Basicamente, objetos são apenas coleções de chave-valor. Em outras palavras, são pedaços de dados (valores) mapeados para identificadores únicos chamados de  propriedades (chaves). Exemplo</p>
+    <p>Basicamente, objetos são apenas coleções de chave-valor. Em outras palavras, são pedaços de dados (valores) mapeados para identificadores únicos chamados de  propriedades (chaves). Exemplo:</p>
     
