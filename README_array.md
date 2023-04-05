@@ -16,6 +16,10 @@
 9. [Iterar todos os itens de uma matriz usando Loops For](#iterarcomloops)
 10. [Crie matrizes multidimensionais complexas](#matrizmultidimensional)
 11. [](#)
+12. [](#)
+13. [](#)
+14. [](#)
+15. [](#)
 <br></br>
 
 <div id="array"></div>
