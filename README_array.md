@@ -20,6 +20,11 @@
 13. [](#)
 14. [](#)
 15. [](#)
+16. [](#)
+17. [](#)
+18. [](#)
+19. [](#)
+20. [](#)
 <br></br>
 
 <div id="array"></div>
@@ -151,4 +156,22 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   ```
   tekkenCharacter.origin = 'South Korea';
   ```
-  <p>Isso usa a notação de ponto (dot notation). Se você observar o objeto tekkenCharacter, ele agora incluirá a propriedade origin.</p>
+  <p>Acima foi usado a notação de ponto (dot notation). Se você observar, o objeto tekkenCharacter, ele agora incluirá a propriedade <code>origin</code>. Adicionando mais uma propriedade ao objeto <code>tekkenCharacter</code> seria da seguinte forma:</p>
+  
+  
+     tekkenCharacter['hair color'] = 'dyed orange';
+
+  
+  
+  <p>O objeto final ficaria da seguinte forma:</p>
+  
+  
+  ```
+  player: 'Hwoarang',
+  fightingStyle: 'Tae Kwon Doe',
+  human: true,
+  origin: 'South Korea',
+  'hair color': 'dyed orange',
+  'eye color': 'brown'
+   ```
+  
