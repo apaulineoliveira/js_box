@@ -175,3 +175,4 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   'eye color': 'brown'
    ```
   
+  <h2>Modificar um objeto aninhado dentro de um objeto</h2>
