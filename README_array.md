@@ -268,3 +268,36 @@ console.log(isEveryoneHere(users));
   ```
   <p>Isso registraria Alan, Jeff e Sarah - cada valor em sua própria linha.</p>
   
+  <h1>Gerando uma matriz de todas as chaves de objeto com Object.keys()</h1>
+      <p>Também podemos gerar um array que contém todas as chaves armazenadas em um objeto com o método Object.keys(), sem ordem específica para as entradas no array. Exemplo: Termine de escrever a função getArrayOfUsers para que ela retorne um array contendo todas as propriedades do objeto que recebe como argumento:</p>
+  
+  ```
+  let users = {
+  Alan: {
+    age: 27,
+    online: false
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: false
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+
+function getArrayOfUsers(obj) {
+  // change code below this line
+  return Object.keys(obj);
+  // change code above this line
+}
+
+console.log(getArrayOfUsers(users));
+  ```
+  <p>O console irá retornar [ 'Alan', 'Jeff', 'Sarah', 'Ryan' ]</p>
+  
