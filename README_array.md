@@ -246,7 +246,7 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   'Alan' in users;
   ```
   
-  <p>Termine de escrever a função para que ela retorne true se o objeto passado a ela contiver todos os quatro nomes, Alan, Jeff, Sarah e Ryan e retorne false caso contrário:</p>
+   <p>Termine de escrever a função para que ela retorne true se o objeto passado a ela contiver todos os quatro nomes, Alan, Jeff, Sarah e Ryan e retorne false caso contrário:</p>
   
   ```
   function isEveryoneHere(userObj) {
@@ -257,3 +257,14 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
 }
 console.log(isEveryoneHere(users));
   ```
+  
+<h1>Iterar pelas chaves de um objeto com uma instrução for...in</h1>
+  <p>Às vezes, pode ser necessário iterar todas as chaves dentro de um objeto. Isso requer uma sintaxe específica em JavaScript chamada de instrução for...in. Para o objeto de nossos usuários, isso pode se parecer com:</p>
+  
+  ```
+  for (let user in users) {
+  console.log(user);
+}
+  ```
+  <p>Isso registraria Alan, Jeff e Sarah - cada valor em sua própria linha.</p>
+  
