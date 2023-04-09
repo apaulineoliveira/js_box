@@ -239,3 +239,21 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   delete foods.apples;
   ```
 <h1>Verifique se um objeto tem uma propriedade</h1>
+      <p>Agora podemos adicionar, modificar e remover chaves de objetos. Mas e se apenas quiséssemos saber se um objeto tem uma propriedade específica? O JavaScript nos fornece duas maneiras diferentes de fazer isso. Um usa o método hasOwnProperty() e o outro usa a palavra-chave in. Se tivermos um objeto users com uma propriedade de Alan, podemos verificar sua presença de uma das seguintes maneiras:</p>
+  
+   ```
+  users.hasOwnProperty('Alan');
+  'Alan' in users;
+  ```
+  
+  <p>Termine de escrever a função para que ela retorne true se o objeto passado a ela contiver todos os quatro nomes, Alan, Jeff, Sarah e Ryan e retorne false caso contrário:</p>
+  
+  ```
+  function isEveryoneHere(userObj) {
+  return userObj.hasOwnProperty("Alan") &&
+    userObj.hasOwnProperty("Jeff") &&
+    userObj.hasOwnProperty("Sarah") &&
+    userObj.hasOwnProperty("Ryan");
+}
+console.log(isEveryoneHere(users));
+  ```
