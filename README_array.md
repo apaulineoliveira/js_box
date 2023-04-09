@@ -192,4 +192,13 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
     }
   }
 };
-```
+  ```
+  
+      
+  
+  
+  <p>Embora as estruturas possam rapidamente se tornar complexas, ainda podemos usar as mesmas notações para acessá-las. Por exemplo: Para atribuir o valor 10 à propriedade aninhada onlineStatus usa-se a <b>notação de ponto</b> para referenciar a propriedade. Como é possível acompanhar abaixo:</p>
+  
+    
+    nestedObject.data.onlineStatus.busy = 10;
+    
