@@ -238,3 +238,4 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   ```
   delete foods.apples;
   ```
+<h1>Verifique se um objeto tem uma propriedade</h1>
