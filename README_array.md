@@ -223,10 +223,18 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   ```
   
   <h1>Acessar nomes de propriedades com notação de colchetes</h1>
-     <p>No primeiro desafio de objeto, mencionamos o uso da notação de colchetes como forma de acessar valores de propriedade usando a avaliação de uma variável. Por exemplo, imagine que nosso objeto comida está sendo usado em um programa para uma caixa registradora de supermercado. Temos alguma função que define o selectedFood e queremos verificar nosso objeto de comida quanto à presença desse alimento. Isso pode se parecer com isso:</p>
+     <p>No primeiro desafio de objeto, mencionamos o uso da notação de colchetes como forma de acessar valores de propriedade usando a avaliação de uma variável. Por exemplo, imagine que nosso objeto comida está sendo usado em um programa para uma caixa registradora de supermercado. Temos alguma função que define o selectedFood e queremos verificar nosso objeto de comida quanto à presença desse alimento. Isso pode se parecer com isso:
    
   ```
   let selectedFood = getCurrentFood(scannedItem);
   let inventory = foods[selectedFood];
   ```
-     <p>Este código irá avaliar o valor armazenado na variável selectedFood e retornar o valor dessa chave no objeto foods, ou indefinido caso não esteja presente. A notação de colchetes é muito útil porque às vezes as propriedades do objeto não são conhecidas antes do tempo de execução ou precisamos acessá-las de maneira mais dinâmica.</p>
+     
+  Este código irá avaliar o valor armazenado na variável selectedFood e retornar o valor dessa chave no objeto foods, ou indefinido caso não esteja presente. A notação de colchetes é muito útil porque às vezes as propriedades do objeto não são conhecidas antes do tempo de execução ou precisamos acessá-las de maneira mais dinâmica.</p>
+
+  <h1>Use a palavra-chave delete para remover as propriedades do objeto</h1>
+      <p>Resumidamente, objetos são armazenamentos de valor-chave que fornecem uma maneira flexível e intuitiva de estruturar dados e fornecem um tempo de pesquisa muito rápido. Para deletar um par chave-valor de um objeto, basta utilizar a palavra reservada: delete. Exemplo utilizando o objeto anterior: </p>
+  
+  ```
+  delete foods.apples;
+  ```
