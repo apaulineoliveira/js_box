@@ -221,3 +221,12 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   ```
   userActivity.data.online = 45;
   ```
+  
+  <h1>Acessar nomes de propriedades com notação de colchetes</h1>
+     <p>No primeiro desafio de objeto, mencionamos o uso da notação de colchetes como forma de acessar valores de propriedade usando a avaliação de uma variável. Por exemplo, imagine que nosso objeto comida está sendo usado em um programa para uma caixa registradora de supermercado. Temos alguma função que define o selectedFood e queremos verificar nosso objeto de comida quanto à presença desse alimento. Isso pode se parecer com isso:</p>
+   
+  ```
+  let selectedFood = getCurrentFood(scannedItem);
+  let inventory = foods[selectedFood];
+  ```
+     <p>Este código irá avaliar o valor armazenado na variável selectedFood e retornar o valor dessa chave no objeto foods, ou indefinido caso não esteja presente. A notação de colchetes é muito útil porque às vezes as propriedades do objeto não são conhecidas antes do tempo de execução ou precisamos acessá-las de maneira mais dinâmica.</p>
