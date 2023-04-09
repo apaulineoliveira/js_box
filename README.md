@@ -631,5 +631,4 @@ let result = str.replace(fixRegex, replaceText);
 let hello = "   Hello, World!  ";
 let wsRegex = /^\s+|\s+$/g; 
 let result = hello.replace(wsRegex, ""); 
-```
-<h1>Use a palavra-chave <b>delete</b> para remover as propriedades do objeto</h1>
+
