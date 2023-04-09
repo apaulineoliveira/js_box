@@ -176,3 +176,20 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
    ```
   
   <h2>Modificar um objeto aninhado dentro de um objeto</h2>
+      <p>As propriedades de um objeto podem ser aninhadas em uma profundidade arbitrária e seus valores podem ser de qualquer tipo de dado suportado pelo JS, incluindo arrays e até mesmo outros objetos.</p>
+  
+  ```
+  let nestedObject = {
+  id: 28802695164,
+  date: 'December 31, 2016',
+  data: {
+    totalUsers: 99,
+    online: 80,
+    onlineStatus: {
+      active: 67,
+      away: 13,
+      busy: 8
+    }
+  }
+};
+```
