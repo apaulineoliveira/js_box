@@ -192,13 +192,32 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
     }
   }
 };
-  ```
+ ```
   
       
   
   
-  <p>Embora as estruturas possam rapidamente se tornar complexas, ainda podemos usar as mesmas notações para acessá-las. Por exemplo: Para atribuir o valor 10 à propriedade aninhada onlineStatus usa-se a <b>notação de ponto</b> para referenciar a propriedade. Como é possível acompanhar abaixo:</p>
+  <p>Embora as estruturas possam rapidamente se tornar complexas, ainda podemos usar as mesmas notações para acessá-las. Por exemplo: Para atribuir o valor 10 à propriedade aninhada onlineStatus usa-se a <b>notação de ponto</b> para referenciar a propriedade. Como é possível acompanhar abaixo: </p>
   
-    
+   
     nestedObject.data.onlineStatus.busy = 10;
     
+  
+<h3>Exercitando... ⌨️</h3>
+   <p><b>Problema</b>: Definimos um objeto chamado userActivity, que inclui um outro objeto aninhado dentro dele; Defina então o valor da chave online como 45.</p>
+   
+  ```
+  let userActivity = {
+  id: 23894201352,
+  date: 'January 1, 2017',
+  data: {
+    totalUsers: 51,
+    online: 42
+  }
+};
+  ```
+  <p><b>Solution:</b></p>
+  
+  ```
+  userActivity.data.online = 45;
+  ```
