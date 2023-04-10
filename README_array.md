@@ -15,13 +15,13 @@
 8. [Verificando a presença de um elemento com indexOf( )](#indexof)
 9. [Iterar todos os itens de uma matriz usando Loops For](#iterarcomloops)
 10. [Crie matrizes multidimensionais complexas](#matrizmultidimensional)
-11. [](#)
-12. [](#)
-13. [](#)
-14. [](#)
-15. [](#)
-16. [](#)
-17. [](#)
+11. [Adicionar Pares de Valor-Chave(Key-Value) a Objetos JavaScript](#)
+12. [Modificar um objeto aninhado dentro de um objeto](#)
+13. [Acessar nomes de propriedades com notação de colchetes](#)
+14. [Use a palavra-chave delete para remover as propriedades do objeto](#)
+15. [Verifique se um objeto tem uma propriedade](#)
+16. [Iterar pelas chaves de um objeto com uma instrução for...in](#)
+17. [Gerando uma matriz de todas as chaves de objeto com Object.keys()](#)
 18. [](#)
 19. [](#)
 20. [](#)
@@ -78,7 +78,7 @@
   <p>A segunda ocorrência de 12 é removida e adicionamos 13 e 14 no mesmo índice. A matriz de números agora seria <code>[10, 11, 12, 13, 14, 15]</code>.</p>
   
   <div id="copiandoarraycomslice"></div>
-  <h2>Copiando itens do array utilizando <b>slice()</b></h2>
+  <h1>Copiando itens do array utilizando <b>slice()</b></h1>
     <p>O método slice não modifica um array; o mesmo copia ou extrai um determinado número de elementos para um novo array. Este método leva apenas dois parâmetros, o primeiro é o índice no qual irá iniciar a extração e o segundo é o índice no qual irá parar a extração(a extração ocorrerá até, mas não incluindo o elemento neste índice). Como é possível visualizar abaixo:
 
         
@@ -88,7 +88,7 @@
 <code>todaysWeather</code> teria o valor de ['snow', 'sleet'];</p>
 
 <div id="copiandocomspreadoperator"></div>
-<h2>Copiando um array com o Spread Operator</h2>
+<h1>Copiando um array com o Spread Operator</h1>
   <p>É possível copiar um array utilizando Spread Operator.</p>
     
       let thisArray = [true, true, undefined, false, null];
@@ -104,7 +104,7 @@
       let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
     
   <div id="indexof"></div>
-  <h2>Verificando a presença de um elemento com indexOf()</h2>
+  <h1>Verificando a presença de um elemento com indexOf()</h1>
     <p>Como os arrays podem ser alterados e modificados a qualquer momento, não há garantia sobre onde um dado específico estará em um determinado array ou se esse elemento ainda existe. Felizmente o Javascript fornece outro método integrado: <code>indexOf()</code>, que permite verificar rápida e facilmente a presença de um elemento em um array.<code>indexOf()</code> recebe um elemento como parâmetro e, quando chamado, retorna a posição ou índice desse elemento, ou <code>-1</code> se o elemento não existir no array. Como é possível ver abaixo:</p>
     
    ``` 
@@ -115,7 +115,7 @@
    ```
    
   <div id="iterarcomloops">
-  <h2>Iterar todos os itens de uma matriz usando Loops For</h2>
+  <h1>Iterar todos os itens de uma matriz usando Loops For</h1>
       <p>JavaScript oferece vários métodos integrados que iteram sobre arrays de maneiras ligeiramente diferentes para obter resultados diferentes, como: every(), forEach(), map(), etc, no entanto, a técnica que é mais flexível e nos oferece o maior quantidade de controle é um <b>loop for</b> simples.</p>
   
       
@@ -137,11 +137,11 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   
   
 <div id="matrizmultidimensional">
-  <h2>Criando matrizes multidimensionais complexas</h2>
+  <h1>Criando matrizes multidimensionais complexas</h1>
     <p>Uma das características mais úteis e poderosas quando se trata de arrays é sua capacidade multidimensional. Os arrays podem conter outras arrays cada uma com os seus próprios níveis arbritrários de profundidade, sendo cada array com seus próprios níveis. Essa estrutura complexa também pode ser chamada de matriz aninhada.</p>
     
   
- <h2>Adicionar Pares de Valor-Chave(Key-Value) a Objetos JavaScript</h2>
+ <h1>Adicionar Pares de Valor-Chave(Key-Value) a Objetos JavaScript</h1>
     <p>Basicamente, objetos são apenas coleções de chave-valor. Em outras palavras, são pedaços de dados (valores) mapeados para identificadores únicos chamados de  propriedades (chaves). Exemplo:</p>
   
   ```
@@ -175,7 +175,7 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   'eye color': 'brown'
    ```
   
-  <h2>Modificar um objeto aninhado dentro de um objeto</h2>
+  <h1>Modificar um objeto aninhado dentro de um objeto</h1>
       <p>As propriedades de um objeto podem ser aninhadas em uma profundidade arbitrária e seus valores podem ser de qualquer tipo de dado suportado pelo JS, incluindo arrays e até mesmo outros objetos.</p>
   
   ```
