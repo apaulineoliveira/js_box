@@ -22,9 +22,6 @@
 15. [Verifique se um objeto tem uma propriedade](#prop)
 16. [Iterar pelas chaves de um objeto com uma instrução for...in](#forin)
 17. [Gerando uma matriz de todas as chaves de objeto com Object.keys()](#keys)
-18. [](#)
-19. [](#)
-20. [](#)
 <br></br>
 
 <div id="array"></div>
@@ -223,6 +220,7 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   userActivity.data.online = 45;
   ```
   
+  <div id="colche">
   <h1>Acessar nomes de propriedades com notação de colchetes</h1>
      <p>No primeiro desafio de objeto, mencionamos o uso da notação de colchetes como forma de acessar valores de propriedade usando a avaliação de uma variável. Por exemplo, imagine que nosso objeto comida está sendo usado em um programa para uma caixa registradora de supermercado. Temos alguma função que define o selectedFood e queremos verificar nosso objeto de comida quanto à presença desse alimento. Isso pode se parecer com isso:
    
@@ -239,6 +237,7 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   ```
   delete foods.apples;
   ```
+<div id="prop">    
 <h1>Verifique se um objeto tem uma propriedade</h1>
       <p>Agora podemos adicionar, modificar e remover chaves de objetos. Mas e se apenas quiséssemos saber se um objeto tem uma propriedade específica? O JavaScript nos fornece duas maneiras diferentes de fazer isso. Um usa o método hasOwnProperty() e o outro usa a palavra-chave in. Se tivermos um objeto users com uma propriedade de Alan, podemos verificar sua presença de uma das seguintes maneiras:</p>
   
@@ -258,7 +257,7 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
 }
 console.log(isEveryoneHere(users));
   ```
-  
+<div id="#forin"> 
 <h1>Iterar pelas chaves de um objeto com uma instrução for...in</h1>
   <p>Às vezes, pode ser necessário iterar todas as chaves dentro de um objeto. Isso requer uma sintaxe específica em JavaScript chamada de instrução for...in. Para o objeto de nossos usuários, isso pode se parecer com:</p>
   
@@ -269,6 +268,7 @@ console.log(isEveryoneHere(users));
   ```
   <p>Isso registraria Alan, Jeff e Sarah - cada valor em sua própria linha.</p>
   
+  <div id="#keys"> 
   <h1>Gerando uma matriz de todas as chaves de objeto com Object.keys()</h1>
       <p>Também podemos gerar um array que contém todas as chaves armazenadas em um objeto com o método Object.keys(), sem ordem específica para as entradas no array. Exemplo: Termine de escrever a função getArrayOfUsers para que ela retorne um array contendo todas as propriedades do objeto que recebe como argumento:</p>
   
