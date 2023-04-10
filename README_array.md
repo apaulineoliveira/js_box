@@ -15,13 +15,13 @@
 8. [Verificando a presença de um elemento com indexOf( )](#indexof)
 9. [Iterar todos os itens de uma matriz usando Loops For](#iterarcomloops)
 10. [Crie matrizes multidimensionais complexas](#matrizmultidimensional)
-11. [Adicionar Pares de Valor-Chave(Key-Value) a Objetos JavaScript](#)
-12. [Modificar um objeto aninhado dentro de um objeto](#)
-13. [Acessar nomes de propriedades com notação de colchetes](#)
-14. [Use a palavra-chave delete para remover as propriedades do objeto](#)
-15. [Verifique se um objeto tem uma propriedade](#)
-16. [Iterar pelas chaves de um objeto com uma instrução for...in](#)
-17. [Gerando uma matriz de todas as chaves de objeto com Object.keys()](#)
+11. [Adicionar Pares de Valor-Chave(Key-Value) a Objetos JavaScript](#multicomplexas)
+12. [Modificar um objeto aninhado dentro de um objeto](#aninhadoobj)
+13. [Acessar nomes de propriedades com notação de colchetes](#colche)
+14. [Use a palavra-chave delete para remover as propriedades do objeto](#obj)
+15. [Verifique se um objeto tem uma propriedade](#prop)
+16. [Iterar pelas chaves de um objeto com uma instrução for...in](#forin)
+17. [Gerando uma matriz de todas as chaves de objeto com Object.keys()](#keys)
 18. [](#)
 19. [](#)
 20. [](#)
@@ -140,7 +140,7 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   <h1>Criando matrizes multidimensionais complexas</h1>
     <p>Uma das características mais úteis e poderosas quando se trata de arrays é sua capacidade multidimensional. Os arrays podem conter outras arrays cada uma com os seus próprios níveis arbritrários de profundidade, sendo cada array com seus próprios níveis. Essa estrutura complexa também pode ser chamada de matriz aninhada.</p>
     
-  
+ <div id="#multicomplexas">
  <h1>Adicionar Pares de Valor-Chave(Key-Value) a Objetos JavaScript</h1>
     <p>Basicamente, objetos são apenas coleções de chave-valor. Em outras palavras, são pedaços de dados (valores) mapeados para identificadores únicos chamados de  propriedades (chaves). Exemplo:</p>
   
@@ -175,6 +175,7 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
   'eye color': 'brown'
    ```
   
+  <div id="#multicomplexas">
   <h1>Modificar um objeto aninhado dentro de um objeto</h1>
       <p>As propriedades de um objeto podem ser aninhadas em uma profundidade arbitrária e seus valores podem ser de qualquer tipo de dado suportado pelo JS, incluindo arrays e até mesmo outros objetos.</p>
   
