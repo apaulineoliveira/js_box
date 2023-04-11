@@ -29,3 +29,13 @@
   return reversedStr;
 }
 ```
+  <p><b>Segunda alternativa de solução:</b></p>
+  
+  ```
+  function reverseString(str) {
+  return str
+    .split("")
+    .reverse()
+    .join("");
+}
+  ```
