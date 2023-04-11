@@ -39,3 +39,6 @@
     .join("");
 }
   ```
+
+<h2>Fatorializar um número</h2>
+  <p>Retorna o fatorial do inteiro fornecido.<br>Se o inteiro for representado pela letra n, um fatorial é o produto de todos os inteiros positivos menores ou iguais a n. Os fatoriais são frequentemente representados com a notação abreviada <code>n!</code>. Por exemplo: 5! = 1 * 2 * 3 * 4 * 5 = 120</p>
