@@ -8,7 +8,7 @@
 3. [Fatorializar um número](#fatorializarumnumero)
 
 
-<h1>Estrutura de Dados e Algorítimo</h1>
+<h2 align="center">Estrutura de Dados e Algorítimo: Problemas e Soluções</h2><br></br>
 
 <div id="celsiustofahrenheit"/>
 <h2>Convertendo temperatura de Celsius para Fahrenheit</h2>
@@ -65,4 +65,5 @@
 factorialize(5);
    ```
    
-   
+<h2>Encontre a palavra mais longa em uma string</h2>   
+
