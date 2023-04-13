@@ -6,6 +6,8 @@
 1. [Convertendo temperatura de Celsius para Fahrenheit](#celsiustofahrenheit)
 2. [Inverter uma String](#inverteremstring)
 3. [Fatorializar um número](#fatorializarumnumero)
+4. [Encontre a palavra mais longa em uma string](#palavramaislong)
+5. [Retornar os maiores números em matrizes](#maioresnumerosemmatrizes)
 
 <br>
 <h2 align="center">Estrutura de Dados e Algorítimo: Problemas e Soluções</h2><br></br>
@@ -64,7 +66,7 @@
 
 factorialize(5);
    ```
-   
+<div id="palavramaislonga"/>   
 <h3>Encontre a palavra mais longa em uma string</h3>   
   <p><b>Explicação</b>: É necessário passar por cada palavra e descobrir qual é a mais longa e retornar o comprimento dessa palavra.</p><br>
   <p><b>Primeira solução:</b></p>
@@ -100,6 +102,7 @@ function findLongestWordLength(str) {
   <li><code>str.split(" ").map(word => word.length)</code> retorna [3, 5, 5, 3, 6, 4, 3, 4, 3]. Por fim, passamos o array como argumento para a função Math.max com o operador spread <code>...</code>.</li>
     </ul>
 
+<div id="maioresnumerosemmatrizes"/>
 <h3>Retornar os maiores números em matrizes</h3>
     <p>Retornar um array que consista no maior número de cada sub-array fornecido. Para simplificar, o array fornecido conterá exatamente 4 sub-arrays; Lembre-se de que você pode iterar por meio de um array com um loop for simples e acessar cada membro com a sintaxe de array arr[i].</p>
    <p><b>Solução:</b></p>
