@@ -66,8 +66,8 @@ factorialize(5);
    ```
    
 <h2>Encontre a palavra mais longa em uma string</h2>   
-<p><b>Explicação</b>: É necessário passar por cada palavra e descobrir qual é a mais longa e retornar o comprimento dessa palavra.</p><br></br>
-<p><b>Primeira solução:</b></p>
+  <p><b>Explicação</b>: É necessário passar por cada palavra e descobrir qual é a mais longa e retornar o comprimento dessa palavra.</p><br>
+  <p><b>Primeira solução:</b></p>
 
 ```
 function findLongestWordLength(str) {
@@ -83,5 +83,20 @@ function findLongestWordLength(str) {
   return maxLength;
 }
 ```
-<p>Explicação passo a passo do código: Pegue a string e converta-a em uma matriz de palavras (<code>str.split(' ')</code>); Declare uma variável para acompanhar o comprimento máximo (<code>let maxLength</code>) e faça um loop de 0 até o comprimento da matriz de palavras.</p>
+  <p>Explicação passo a passo do código: Pegue a string e converta-a em uma matriz de palavras (<code>str.split(' ')</code>); Declare uma variável para acompanhar o comprimento máximo (<code>let maxLength</code>) e faça um loop de 0 até o comprimento da matriz de palavras. Em seguida, verifique a palavra mais longa comparando a palavra atual com a anterior ( <code>words[i].length > maxLength</code> ). No final do loop apenas retorne o valor numérico da variável <code>maxLength</code>.</p>
+  <p><b>Segunda solução (usando métodos):</b></p>
+  
+  ```
+  function findLongestWordLength(str) {
+  return Math.max(...str.split(" ").map(word => word.length));
+}
+  ```
+  
+  <p>Explicação passo a passo do código:</p>
+    <ul>
+       <li>Fornecemos a <code>Math.max</code> o comprimento de cada palavra como argumento e ele simplesmente retornará o maior de todos.</li>
+       <li>Agora analisando dentro dos parênteses: <code>str.split(" ")</code> divide a string em uma matriz, usando espaços como separadores. Ele retorna este array: ["O","rápido,"marrom","raposa","pular","sobre","o","preguiçoso","cachorro"].</li>
+       <li>Em seguida, faremos outro array, feito a partir dos comprimentos de cada elemento do array <code>str.split(" ")</code> com <code>map()</code>.</li>
+  <li><code>str.split(" ").map(word => word.length)</code> retorna [3, 5, 5, 3, 6, 4, 3, 4, 3]. Por fim, passamos o array como argumento para a função Math.max com o operador spread <code>...</code>.</li>
+    </ul>
 
