@@ -8,7 +8,7 @@
 3. [Fatorializar um número](#fatorializarumnumero)
 4. [Encontre a palavra mais longa em uma string](#palavramaislonga)
 5. [Retornar os maiores números em matrizes](#maioresnumerosemmatrizes)
-6. [Confirme o final](#confirmeofinal)
+6. [Confirmando o final](#confirmeofinal)
 
 <br>
 <h2 align="center">Estrutura de Dados e Algorítimo: Problemas e Soluções</h2><br></br>
@@ -137,5 +137,5 @@ function findLongestWordLength(str) {
     </ul>
 
 <div id="confirmeofinal"/>
-<h3>Confirme o final</h3> 
-  <p></p>
+<h3>Confirmando o final</h3> 
+  <p>Verifique se uma string (primeiro argumento, str) termina com a string de destino fornecida (segundo argumento, target). <br></br> A FreeCodeCamp fala que este desafio pode ser resolvido com o método <code>.endsWith()</code>, que foi introduzido no ES2015. Mas, para o mesmo, seria mais interessante o uso de métodos de substrings do JS.</p>
