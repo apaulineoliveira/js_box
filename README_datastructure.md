@@ -139,3 +139,11 @@ function findLongestWordLength(str) {
 <div id="confirmeofinal"/>
 <h3>Confirmando o final</h3> 
   <p>Verifique se uma string (primeiro argumento, str) termina com a string de destino fornecida (segundo argumento, target). <br></br> A FreeCodeCamp fala que este desafio pode ser resolvido com o método <code>.endsWith()</code>, que foi introduzido no ES2015. Mas, para o mesmo, seria mais interessante o uso de métodos de substrings do JS.</p>
+  <b>Solução:</b>
+  
+  ```
+  function confirmEnding(str, target) {
+  return str.slice(str.length - target.length) === target;
+}
+confirmEnding("He has to give me a new name", "name");
+  ```
