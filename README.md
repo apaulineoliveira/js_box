@@ -1,10 +1,18 @@
 
-  <p><b>🎯 Objetivo</b>: O objetivo deste repositório é reunir os principais conceitos e práticas utilizadas pela línguagem Javascript com o intuito de fixar e aprimorar os conhecimentos em questões tão cotidianamente usuais ao trabalhar.</p>
-  <p>É válido ressaltar que grande parte dos conceitos, exercícios e exemplos presentes neste repositório foram retirados e traduzidos para pt-br, do site <a href ="https://www.freecodecamp.org/learn">FreeCodeCamp.org</a>.</p>
-  
+ <br>
+ </br>
+  <br>
+ </br>
+ <p align="center">O objetivo deste repositório é reunir os principais conceitos e práticas utilizadas pela línguagem Javascript com o intuito de fixar e aprimorar os conhecimentos em questões tão cotidianamente usuais ao trabalhar. É válido ressaltar que grande parte dos conceitos, exercícios e exemplos presentes neste repositório foram retirados e traduzidos para pt-br, do site <a href ="https://www.freecodecamp.org/learn">FreeCodeCamp.org</a>.</p>
+
+<br>
+</br>
 <p align="center">  
   <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png" height="180" width="200">
 </p>
+
+<br>
+</br>
 
 <b>Guia de conteúdo</b>
 1. [Regex](#regex)
@@ -36,8 +44,8 @@
 
 <div id='regex'/>  
 
-<h1>Regex</h1>
-  <h2>Caracter curinga</h2>
+<h2>Regex</h2>
+  <h3>Caracter curinga</h3>
     <p>O caracter curinga serve para criar uma combinação de expressões que comumente são aceitáveis. Segundo a definição da FreeCodeCamp compreende por carácter curinga como:<br></br> "O curinga também é chamado de ponto e ponto. Você pode usar o caractere curinga como qualquer outro caractere no regex. Por exemplo, se você quiser corresponder a hug, huh, hut e hum, poderá usar a expressão regular /hu./ para corresponder às quatro palavras." <br></br>Como o exemplo retirado da <a href ="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/regular-expressions/match-anything-with-wildcard-period">FreeCodeCamp</a>:</p>
     
 ```
