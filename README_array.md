@@ -2,7 +2,7 @@
   <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png" height="180" width="200">
 </p>
 
-<p>É válido ressaltar que todos os conteúdos desse readme foram retirados do site oficial da <b>MDN</b>.</p>
+<p align="center">É válido ressaltar que todos os conteúdos deste readme foram retirados do site oficial da <b>MDN</b>.</p><br>
 
 <b>Guia de conteúdo</b>
 1. [Array](#array)
@@ -138,7 +138,7 @@ greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
     <p>Uma das características mais úteis e poderosas quando se trata de arrays é sua capacidade multidimensional. Os arrays podem conter outras arrays cada uma com os seus próprios níveis arbritrários de profundidade, sendo cada array com seus próprios níveis. Essa estrutura complexa também pode ser chamada de matriz aninhada.</p>
     
  <div id="#multicomplexas"></div>
- <h1>Adicionar Pares de Valor-Chave(Key-Value) a Objetos JavaScript</h1>
+    <h1>Adicionar Pares de Valor-Chave(Key-Value) a Objetos JavaScript</h1>
     <p>Basicamente, objetos são apenas coleções de chave-valor. Em outras palavras, são pedaços de dados (valores) mapeados para identificadores únicos chamados de  propriedades (chaves). Exemplo:</p>
   
   ```
