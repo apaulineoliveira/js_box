@@ -6,7 +6,7 @@
 1. [Convertendo temperatura de Celsius para Fahrenheit](#celsiustofahrenheit)
 2. [Inverter uma String](#inverteremstring)
 3. [Fatorializar um número](#fatorializarumnumero)
-4. [Encontre a palavra mais longa em uma string](#palavramaislong)
+4. [Encontre a palavra mais longa em uma string](#palavramaislonga)
 5. [Retornar os maiores números em matrizes](#maioresnumerosemmatrizes)
 
 <br>
@@ -85,7 +85,7 @@ function findLongestWordLength(str) {
   return maxLength;
 }
 ```
-  <p>Explicação passo a passo do código: Pegue a string e converta-a em uma matriz de palavras (<code>str.split(' ')</code>); Declare uma variável para acompanhar o comprimento máximo (<code>let maxLength</code>) e faça um loop de 0 até o comprimento da matriz de palavras. Em seguida, verifique a palavra mais longa comparando a palavra atual com a anterior ( <code>words[i].length > maxLength</code> ). No final do loop apenas retorne o valor numérico da variável <code>maxLength</code>.</p>
+  <p>Explicando passo a passo do código: Pegue a string e converta-a em uma matriz de palavras (<code>str.split(' ')</code>); Declare uma variável para acompanhar o comprimento máximo (<code>let maxLength</code>) e faça um loop de 0 até o comprimento da matriz de palavras. Em seguida, verifique a palavra mais longa comparando a palavra atual com a anterior ( <code>words[i].length > maxLength</code> ). No final do loop apenas retorne o valor numérico da variável <code>maxLength</code>.</p>
   <p><b>Segunda solução (usando métodos):</b></p>
   
   ```
@@ -94,7 +94,7 @@ function findLongestWordLength(str) {
 }
   ```
   
-  <p>Explicação passo a passo do código:</p>
+  <p><b>Explicando passo a passo do código</b>:</p>
     <ul>
        <li>Fornecemos a <code>Math.max</code> o comprimento de cada palavra como argumento e ele simplesmente retornará o maior de todos.</li>
        <li>Agora analisando dentro dos parênteses: <code>str.split(" ")</code> divide a string em uma matriz, usando espaços como separadores. Ele retorna este array: ["O","rápido,"marrom","raposa","pular","sobre","o","preguiçoso","cachorro"].</li>
@@ -124,3 +124,14 @@ function findLongestWordLength(str) {
   return results;
 }
 ````
+  <p><b>Explicando passo a passo do código</b>:</p>
+    <ul>
+       <li>Crie uma variável para armazenar os resultados como uma matriz;</li>
+       <li>Crie um loop externo para iterar na matriz externa;</li>
+       <li>Crie uma segunda variável para conter o maior número e inicialize-a com o primeiro número. Isso deve estar fora de um loop interno para que não seja reatribuído até encontrarmos um número maior;</li>
+       <li>Crie o referido loop interno para trabalhar com os sub-arrays;</li>
+       <li>Verifique se o elemento da submatriz é maior que o maior número atualmente armazenado. Em caso afirmativo, atualize o número na variável;</li>
+       <li>Após o loop interno, salve o maior número na posição correspondente dentro da matriz de resultados;</li>
+       <li>E, finalmente, retorne o referido array.</li>
+    </ul>
+  
