@@ -8,6 +8,7 @@
 3. [Fatorializar um número](#fatorializarumnumero)
 4. [Encontre a palavra mais longa em uma string](#palavramaislonga)
 5. [Retornar os maiores números em matrizes](#maioresnumerosemmatrizes)
+6. [Confirme o final](#confirmeofinal)
 
 <br>
 <h2 align="center">Estrutura de Dados e Algorítimo: Problemas e Soluções</h2><br></br>
@@ -134,4 +135,7 @@ function findLongestWordLength(str) {
        <li>Após o loop interno, salve o maior número na posição correspondente dentro da matriz de resultados;</li>
        <li>E, finalmente, retorne o referido array.</li>
     </ul>
-  
+
+<div id="confirmeofinal"/>
+<h3>Confirme o final</h3> 
+  <p></p>
