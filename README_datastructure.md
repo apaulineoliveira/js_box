@@ -100,3 +100,24 @@ function findLongestWordLength(str) {
   <li><code>str.split(" ").map(word => word.length)</code> retorna [3, 5, 5, 3, 6, 4, 3, 4, 3]. Por fim, passamos o array como argumento para a função Math.max com o operador spread <code>...</code>.</li>
     </ul>
 
+<h3>Retornar os maiores números em matrizes</h3>
+    <p>Retornar um array que consista no maior número de cada sub-array fornecido. Para simplificar, o array fornecido conterá exatamente 4 sub-arrays; Lembre-se de que você pode iterar por meio de um array com um loop for simples e acessar cada membro com a sintaxe de array arr[i].</p>
+   <p><b>Solução:</b></p>
+   
+   ````
+    function largestOfFour(arr) {
+    const results = [];
+    
+    for (let i = 0; i < arr.length; i++) {
+       let largestNumber = arr[i][0];
+    for (let j = 1; j < arr[i].length; j++) {
+      if (arr[i][j] > largestNumber) {
+        largestNumber = arr[i][j];
+      }
+    }
+    results[i] = largestNumber;
+  }
+
+  return results;
+}
+````
