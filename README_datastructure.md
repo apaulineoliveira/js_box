@@ -7,11 +7,11 @@
 2. [Inverter uma String](#inverteremstring)
 3. [Fatorializar um número](#fatorializarumnumero)
 
-
+<br>
 <h2 align="center">Estrutura de Dados e Algorítimo: Problemas e Soluções</h2><br></br>
 
 <div id="celsiustofahrenheit"/>
-<h2>Convertendo temperatura de Celsius para Fahrenheit</h2>
+<h3>Convertendo temperatura de Celsius para Fahrenheit</h3>
   <p><b>Observação</b>: A fórumula para converter Celsius para Fahrenheit é a temperatura em Celsius vezes 9/5, mais 32. Para solucionar esse desafio é importante perceber em primeira instância <b>a ordem de operação</b>, usando parênteses quando necessário.</p>
    <p><b>Solução</b>:</p>
    
@@ -24,7 +24,7 @@
    convertCtoF(30); 
    ```
    <div id="inverteremstring"/>
-   <h2>Inverter uma String</h2>
+   <h3>Inverter uma String</h3>
    <p>Inverta a string fornecida e retorne a string invertida. Por exemplo, <code>"olá"</code> deve se tornar <code>"olleh"</code>.</p>
    <p><b>Dica</b>: Uma maneira possível de resolver esse desafio é criar uma <b>nova string</b> (inicializando-a com uma string em branco “”) e, em seguida, iterar a string começando do último caractere até o primeiro caractere e concatenar cada caractere na nova string. todos os caracteres na string, você retorna a nova string.</p>
    <p><b>Primeira alternativa de solução</b>:</p>
@@ -49,7 +49,7 @@
 }
   ```
 <div id="fatorializarumnumero"/>
-<h2>Fatorializar um número</h2>
+<h3>Fatorializar um número</h3>
   <p>Retorna o fatorial do inteiro fornecido;<br></br>Se o inteiro for representado pela letra n, um fatorial é o produto de todos os inteiros positivos menores ou iguais a n. Os fatoriais são frequentemente representados com a notação abreviada <code>n!</code>. Por exemplo: 5! = 1 * 2 * 3 * 4 * 5 = 120</p>
   <p><b>Primeira alternativa de solução:</b></p>
    
@@ -65,7 +65,7 @@
 factorialize(5);
    ```
    
-<h2>Encontre a palavra mais longa em uma string</h2>   
+<h3>Encontre a palavra mais longa em uma string</h3>   
   <p><b>Explicação</b>: É necessário passar por cada palavra e descobrir qual é a mais longa e retornar o comprimento dessa palavra.</p><br>
   <p><b>Primeira solução:</b></p>
 
