@@ -9,6 +9,7 @@
 4. [Encontre a palavra mais longa em uma string](#palavramaislonga)
 5. [Retornar os maiores números em matrizes](#maioresnumerosemmatrizes)
 6. [Confirmando o final](#confirmeofinal)
+7. [Repetir uma string](#repetirumastring)
 
 <br>
 <h2 align="center">Estrutura de Dados e Algorítimo: Problemas e Soluções</h2><br></br>
@@ -156,3 +157,8 @@ confirmEnding("He has to give me a new name", "name");
        <li>Subtraímos o comprimento de str e o comprimento do alvo (target), dessa forma, obteremos os últimos caracteres restantes equivalentes ao comprimento do alvo;</li>
        <li>Por fim, comparamos o resultado de retorno de slice com o target e verificamos se eles têm os mesmos caracteres.</li>
     </ul>
+
+
+<div id="repetirumastring"/>
+<h3>Repetir uma string</h3>
+  <p>Repetir uma determinada string str (primeiro argumento) por <b>num</b>(segundo argumento). Retornar uma string vazia se num for um número positivo.<br></br> Para a finalidade deste desafio, não use o método interno <code>.repeat( )</code>.</p>
