@@ -10,7 +10,7 @@
 5. [Retornar os maiores números em matrizes](#maioresnumerosemmatrizes)
 6. [Confirmando o final](#confirmeofinal)
 7. [Repetir uma string](#repetirumastring)
-8. []()
+
 
 <br>
 <h2 align="center">Estrutura de Dados e Algorítimo: Problemas e Soluções</h2><br></br>
@@ -181,5 +181,5 @@ confirmEnding("He has to give me a new name", "name");
       <li>Crie uma variável de string vazia para armazenar a palavra repetida;</li>
       <li>Use um loop for para repetir o código quantas vezes forem necessárias de acordo com o número;</li>
       <li>Em seguida, adicionamos a string à variável criada na etapa um dentro do loop;</li>
-      <li><No final do loop, retorne a variável para a palavra repetida./li>
+      <li><No final do loop, retorne a variável para a palavra repetida.</li>
     </ul>
