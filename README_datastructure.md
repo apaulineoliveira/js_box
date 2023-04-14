@@ -176,3 +176,10 @@ confirmEnding("He has to give me a new name", "name");
   return accumulatedStr;
 }
    ```
+<p><b>Explicando passo a passo do código</b>:</p>
+    <ul>
+      <li>Crie uma variável de string vazia para armazenar a palavra repetida;</li>
+      <li>Use um loop for para repetir o código quantas vezes forem necessárias de acordo com o número;</li>
+      <li>Em seguida, adicionamos a string à variável criada na etapa um dentro do loop;</li>
+      <li><No final do loop, retorne a variável para a palavra repetida./li>
+    </ul>
