@@ -147,3 +147,12 @@ function findLongestWordLength(str) {
 }
 confirmEnding("He has to give me a new name", "name");
   ```
+<p><b>Explicando passo a passo do código</b>:</p>
+    <ul>
+       <li>Primeiro usamos o método slice para copiar a string;</li>
+       <li>Para obter os últimos caracteres em str equivalentes ao comprimento do alvo (target), usamos o método slice;</li>
+       <li>O primeiro parâmetro dentro do método slice é o índice incial e o segundo parâmetro seria o índice final;</li>
+       <li>Por exemplo, str.slice(10,17) retornaria para mim. Neste caso, incluímos apenas um parâmetro que copiará tudo do índice inicial;</li>
+       <li>Subtraímos o comprimento de str e o comprimento do alvo (target), dessa forma, obteremos os últimos caracteres restantes equivalentes ao comprimento do alvo;</li>
+       <li>Por fim, comparamos o resultado de retorno de slice com o target e verificamos se eles têm os mesmos caracteres.</li>
+    </ul>
