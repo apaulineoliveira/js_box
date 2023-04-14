@@ -10,6 +10,7 @@
 5. [Retornar os maiores números em matrizes](#maioresnumerosemmatrizes)
 6. [Confirmando o final](#confirmeofinal)
 7. [Repetir uma string](#repetirumastring)
+8. []()
 
 <br>
 <h2 align="center">Estrutura de Dados e Algorítimo: Problemas e Soluções</h2><br></br>
@@ -162,3 +163,16 @@ confirmEnding("He has to give me a new name", "name");
 <div id="repetirumastring"/>
 <h3>Repetir uma string</h3>
   <p>Repetir uma determinada string str (primeiro argumento) por <b>num</b>(segundo argumento). Retornar uma string vazia se num for um número positivo.<br></br> Para a finalidade deste desafio, não use o método interno <code>.repeat( )</code>.</p>
+   <p><b>Primeira solução:</b>:</p>
+   
+   ```
+   function repeatStringNumTimes(str, num) {
+   let accumulatedStr = "";
+
+  for (let i = 0; i < num; i++) {
+    accumulatedStr += str;
+  }
+
+  return accumulatedStr;
+}
+   ```
