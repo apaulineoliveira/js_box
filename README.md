@@ -44,7 +44,7 @@
 
 <div id='regex'/>  
 
-<h2>Regex</h2>
+<h2 align="center">Regex</h2>
   <h3>Caracter curinga</h3>
     <p>O caracter curinga serve para criar uma combinação de expressões que comumente são aceitáveis. Segundo a definição da FreeCodeCamp compreende por carácter curinga como:<br></br> "O curinga também é chamado de ponto e ponto. Você pode usar o caractere curinga como qualquer outro caractere no regex. Por exemplo, se você quiser corresponder a hug, huh, hut e hum, poderá usar a expressão regular /hu./ para corresponder às quatro palavras." <br></br>Como o exemplo retirado da <a href ="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/regular-expressions/match-anything-with-wildcard-period">FreeCodeCamp</a>:</p>
     
@@ -77,7 +77,7 @@ bogStr.match(bgRegex);
 ```
 <p>Em ordem, as quatro chamadas de correspondência retornariam os valores ["big"], ["bag"], ["bug"] e nulo.</p>
 
-<h2>⌨️ Exercitando...</h2>
+<h2 align="center>⌨️ Exercitando...</h2>
   <p>Use uma classe de caracteres com vogais (a, e, i, o, u) em sua vogal regex Regex para encontrar todas as vogais na string quoteSample.
 Observação: certifique-se de combinar as vogais maiúsculas e minúsculas.</p>
 
@@ -107,7 +107,7 @@ matStr.match(bgRegex);
 ```
 <p>Em ordem, as três chamadas de correspondência retornariam os valores ["cat"], ["bat"] e nulo.</p>
 
-<h3>⌨️ Exercitando...</h3>
+<h3 align="center">⌨️ Exercitando...</h3>
   <p>Combine todas as letras na string quoteSample.Nota: Certifique-se de combinar letras maiúsculas e minúsculas.</p>
 
 <p><b>Solução:</b></p>
@@ -131,7 +131,7 @@ let jennyStr = "Jenny8675309";
 let myRegex = /[a-z0-9]/ig;
 jennyStr.match(myRegex);
 ```
-<h3>⌨️ Exercitando...</h3>
+<h3 align="center">⌨️ Exercitando...</h3>
   <p>Crie um único regex que corresponda a um intervalo de letras entre <code>h e s</code> e a um intervalo de números entre <code>2 e 6</code>. Lembre-se de incluir os sinalizadores apropriados no regex.</p>
   
 <p><b>Solução:</b></p>  
@@ -146,7 +146,7 @@ let result = quoteSample.match(myRegex);
 <h2>Correspondência de caracteres únicos não especificados</h2>
   <p>O conjunto de caracteres que não deseja corresponder são chamados de <b></b>conjuntos de caracteres negados. Para criá-los basta colocar um caracter de circunflexo (^) após o colchete de abertura e antes dos caracteres que não deseja corresponder. Por exemplo, <code>/[^aeiou]/gi</code> corresponde a todos os caracteres que <b>não</b> são vogais. Observe que caracteres como ., !, [, @, / e espaço em branco são correspondidos - o conjunto de caracteres de vogal negada exclui apenas os caracteres de vogal.</p> 
 
-<h3>⌨️ Exercitando...</h3>
+<h3 align="center">⌨️ Exercitando...</h3>
   <p>Crie um único regex que corresponda a todos os caracteres que não sejam um número ou uma vogal. Lembre-se de incluir os sinalizadores apropriados no regex.</p>
   
 <p><b>Solução:</b></p>
@@ -169,7 +169,7 @@ let result = quoteSample.match(myRegex);
   <p>Por exemplo, <code>/a+/g</code> encontraria uma correspondência em abc e retornaria ["a"]. Por causa do +, ele também encontraria uma única correspondência em <b>aabc</b> e retornaria ["aa"].</p>
   <p>Se, em vez disso, estivesse verificando a string <b>abab</b>, encontraria duas correspondências e retornaria ["a", "a"] porque os caracteres <code>a</code> não estão em uma linha - há um b entre eles. Finalmente, como não há <code>a</code> na string bcd, ele não encontraria uma correspondência.</p>
   
-  <h3>⌨️ Exercitando...</h3>
+  <h3 align="center">⌨️ Exercitando...</h3>
     <p>Você deseja encontrar correspondências quando a letra <code>s</code> ocorre uma ou mais vezes na palavra <b>Mississippi</b>. Escreva um regex que use o sinal +.</p>
 
 <p><b>Solução:</b></p>
@@ -197,7 +197,7 @@ oPhrase.match(goRegex);
 ```
 <p>Em ordem, as três chamadas de correspondência retornariam os valores ["goooooooo"], ["g"] e nulo.</p>
 
-<h3>⌨️ Exercitando...</h3>
+<h3 align="center">⌨️ Exercitando...</h3>
   <p>Ambos alloFor este desafio, chewieQuote foi inicializado como a string Aaaaaaaaaaaaaaaaarrrgh! Por trás das cenas. Crie um regex chewieRegex que use o caractere * para corresponder a um caractere A maiúsculo imediatamente seguido por zero ou mais caracteres a minúsculos em chewieQuote. Seu regex não precisa de sinalizadores ou classes de caracteres e não deve corresponder a nenhuma das outras aspas.w para qualquer número de ocorrências da mesma letra seguidas, por exemplo,</p>
   
 <p><b>Solução:</b></p>
@@ -258,7 +258,7 @@ shortHand.test(varNames);
 ```
 <p>Todas essas quatro chamadas de teste retornariam true. Essas classes de caracteres de atalho também são conhecidas como classes de caracteres abreviados.</p>
 
-<h3>⌨️ Exercitando...</h3>
+<h3 align="center">⌨️ Exercitando...</h3>
   <p>Use a classe de caractere abreviada <code>\w</code> para contar o número de caracteres alfanuméricos em várias aspas e strings.</p>
   
 <p><b>Solução:</b></p>
@@ -284,7 +284,7 @@ sentence.match(shortHand);
 ```
 <p>A primeira chamada de correspondência retornaria o valor ["%"] e a segunda retornaria ["!"].</p>
 
-<h3>⌨️ Exercitando...</h3>
+<h3 align="center">⌨️ Exercitando...</h3>
   <p>Use a classe de caractere abreviada <code>\W</code> para contar o número de caracteres não alfanuméricos em várias aspas e strings.</p>
   
 <p><b>Solução:</b></p>
@@ -314,11 +314,11 @@ let result = movieName.match(numRegex).length;
   
  ```
  let movieName = "2001: A Space Odyssey";
-let noNumRegex = /\D/gi; 
-let result = movieName.match(noNumRegex).length;
+ let noNumRegex = /\D/gi; 
+ let result = movieName.match(noNumRegex).length;
 
 ```
-<h3>⌨️ Exercitando...</h3>
+<h3 align="center">⌨️ Exercitando...</h3>
   <h3>Restringir possíveis nomes de usuário</h3>
   <p>Escopo: Os nomes de usuário são usados em toda parte na Internet. São eles que dão aos usuários uma identidade única em seus sites favoritos.Você precisa verificar todos os nomes de usuário em um banco de dados.</p>
   <p>Aqui estão algumas regras simples que os usuários devem seguir ao criar seu nome de usuário:</p>
@@ -403,7 +403,7 @@ multipleA.test(A100);
 ```
 <p>Em ordem, as três chamadas de teste retornariam true, false e true.</p>
 
-<h3>⌨️ Exercitando...</h3>
+<h3 align="center">⌨️ Exercitando...</h3>
   
   <p><b>Solução</b></p>
   
@@ -428,7 +428,7 @@ multipleHA.test(A100);
 ```
 <p>Em ordem, as três chamadas de teste retornariam false, true e false.</p>
 
-<h3>⌨️ Exercitando...</h3>
+<h3 align="center">⌨️ Exercitando...</h3>
   <p>Altere o regex <code>timRegex</code> para corresponder à palavra Timber somente quando ela tiver quatro letras <code>m</code>.</p>
   
   <p><b>Solução</b></p>
@@ -453,7 +453,7 @@ rainbowRegex.test(british);
 ```
 <p>Ambos os usos do método de teste retornariam true.</p>
 
-<h3>⌨️ Exercitando...</h3>
+<h3 align="center">⌨️ Exercitando...</h3>
   <p>Altere o regex <code>timRegex</code> para corresponder à palavra Timber somente quando ela tiver quatro letras <code>m</code>.</p>
   
   <p><b>Solução</b></p>
@@ -494,7 +494,7 @@ let checkPass = /(?=\w{3,6})(?=\D*\d)/;
 checkPass.test(password);
 ```
 
-<h3>⌨️ Exercitando...</h3>
+<h3 align="center">⌨️ Exercitando...</h3>
   <p>Use look aheads no <code>pwRegex</code> para corresponder a senhas com mais de 5 caracteres e dois dígitos consecutivos.</code></p>
  
   <p>Dicas para solucionar o desafio:</p>
@@ -526,7 +526,7 @@ testRegex.test(testStr);
 ```
 <p>O método de teste aqui retornaria <code>true</code>.</p>
 
-<h3>⌨️ Exercitando...</h3>
+<h3 align="center">⌨️ Exercitando...</h3>
   <p>Corrija o regex para que ele verifique os nomes de Franklin Roosevelt ou Eleanor Roosevelt com case sensitive (maiúsculas e minúsculas) e deve fazer concessões para nomes do meio. Em seguida, corrija o código para que o regex que você criou seja verificado em relação a myString e verdadeiro ou falso seja retornado dependendo se o regex corresponder.</p>
   
   <p><b>Solução:</b></p>
@@ -573,7 +573,7 @@ repeatStr.match(repeatRegex); // Returns ["row row row", "row"]
 ```
 <p>Usar o método .match() em uma string retornará uma matriz com a substring correspondente, junto com seus grupos capturados.</p>
 
-<h3>⌨️ Exercitando...</h3>
+<h3 align="center">⌨️ Exercitando...</h3>
   <p>Use grupos de captura em <code>reRegex</code> para corresponder a uma string que consiste apenas no mesmo número repetido exatamente três vezes, separados por espaços simples</p>
   
   <p><b>Solução:</b></p>
@@ -613,7 +613,7 @@ wrongText.replace(silverRegex, "blue");
 ```
 <p>A chamada de substituição (replace) retornaria a string "Camp Code".</p>
 
-<h3>⌨️ Exercitando...</h3>
+<h3 align="center">⌨️ Exercitando...</h3>
   <p>Escreva um regex <code>fixRegex</code> usando três grupos de captura que procurarão cada palavra na string <code>one two three</code>. Em seguida, atualize a variável <code>replaceText</code> para substituir <code>one two three</code> pela string <code>three two one</code> e atribua o resultado à variável <code>result</code>. <b>Certifique-se de estar utilizando grupos de captura na string de substituição usando a sintaxe de cifrão ($)</b>.</p>
   
   <p><b>Solução:</b></p>
