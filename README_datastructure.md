@@ -162,7 +162,8 @@ confirmEnding("He has to give me a new name", "name");
 
 <div id="repetirumastring"/>
 <h3>Repetir uma string</h3>
-  <p>Repetir uma determinada string str (primeiro argumento) por <b>num</b>(segundo argumento). Retornar uma string vazia se num for um número positivo.<br></br> Para a finalidade deste desafio, não use o método interno <code>.repeat( )</code>.</p>
+  <p>Repetir uma determinada string <code>str</code> (primeiro argumento) por <code>num</code>(segundo argumento) de vezes. Retornar uma string vazia se num for um número positivo.<br></br> Para a finalidade deste desafio, não use o método interno <code>.repeat( )</code>.</p>
+  
    <p><b>Primeira solução:</b>:</p>
    
    ```
@@ -178,8 +179,8 @@ confirmEnding("He has to give me a new name", "name");
    ```
 <p><b>Explicando passo a passo do código</b>:</p>
     <ul>
-      <li>Crie uma variável de string vazia para armazenar a palavra repetida;</li>
+      <li>Crie uma variável de string vazia para armazenar a palavra repetida (let accumulatedStr = "";);</li>
       <li>Use um loop for para repetir o código quantas vezes forem necessárias de acordo com o número;</li>
-      <li>Em seguida, adicionamos a string à variável criada na etapa um dentro do loop;</li>
+      <li>Em seguida, adicionamos a string à variável criada na etapa um, dentro do loop;</li>
       <li><No final do loop, retorne a variável para a palavra repetida.</li>
     </ul>
