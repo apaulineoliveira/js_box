@@ -108,6 +108,8 @@ matStr.match(bgRegex);
 <p>Em ordem, as três chamadas de correspondência retornariam os valores ["cat"], ["bat"] e nulo.</p>
 
 <h3 align="center">⌨️ Exercitando...</h3>
+<br></br>
+
   <p>Combine todas as letras na string quoteSample.Nota: Certifique-se de combinar letras maiúsculas e minúsculas.</p>
 
 <p><b>Solução:</b></p>
