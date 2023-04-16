@@ -12,6 +12,9 @@
 7. [Repetir uma string](#repetirumastring)
 
 
+
+
+
 <br>
 <h2 align="center">Estrutura de Dados e Algorítimo: Problemas e Soluções</h2><br></br>
 
@@ -184,3 +187,9 @@ confirmEnding("He has to give me a new name", "name");
       <li>Em seguida, adicionamos a string à variável criada na etapa um, dentro do loop;</li>
       <li><No final do loop, retorne a variável para a palavra repetida.</li>
     </ul>
+
+
+
+<div id="#truncar"/>
+<h3>Truncar uma string</h3>
+  <p>Trunque uma string (primeiro argumento) se ela for maior que o comprimento máximo da string fornecida (segundo argumento). Retorne a string truncada com <code>... </code> final</p>
