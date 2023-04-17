@@ -11,6 +11,7 @@
 6. [Confirmando o final](#confirmeofinal)
 7. [Repetir uma string](#repetirumastring)
 8. [Truncar uma string](#truncarumastring)
+9. [Teste de validação](#)
 
 
 
@@ -226,3 +227,6 @@ confirmEnding("He has to give me a new name", "name");
 </ul>
 
 <p><b>Nota</b>: Para entender o código acima, você precisa entender como funciona um Operador Ternário. O Operador Ternário é frequentemente usado como um atalho para a instrução if e segue este formato: <code>condição ? expr1: expr2</code>. Se a condição for avaliada como verdadeira, o operador retornará o valor de expr1. Caso contrário retornará o valor de expr2.</p>
+
+<h3>Teste de validação</h3>
+  <p>Crie uma função que examine um array <b>arr</b> e retorne o primeiro elemento nele que passe em um "teste de verdade". Isso significa que, dado um elemento x, o 'teste de verdade' é aprovado se func(x) for verdadeiro. Se nenhum elemento passar no teste, retornará indefinido.</p>
