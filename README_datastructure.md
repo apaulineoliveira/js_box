@@ -205,3 +205,11 @@ confirmEnding("He has to give me a new name", "name");
   }
 }
   ```
+<p><b>Explicando passo a passo do código</b>:</p>
+<ul> 
+  <li>Começamos com uma simples instrução if para determinar um dos dois resultados;</li>
+  <li>Se o comprimento da string for maior que o num que queremos truncá-la, retornarmos uma fatia (slice) da string começando no caractere 0 e terminando em num. Em seguida, acrescentamos nosso '...' ao final da string;</li>
+  <li>No entanto, se a situação acima não for verdadeira, isso significa que o comprimento de string é menor que nosso número de truncamento. Portanto, podemos apenas retornar a string.</li>
+  <li></li>
+</ul>
+  
