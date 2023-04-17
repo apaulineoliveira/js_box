@@ -193,3 +193,15 @@ confirmEnding("He has to give me a new name", "name");
 <div id="#truncar"/>
 <h3>Truncar uma string</h3>
   <p>Trunque uma string (primeiro argumento) se ela for maior que o comprimento máximo da string fornecida (segundo argumento). Retorne a string truncada com <code>... </code> final. Para este desafio será necessário usar o método <code>slice()</code> e especificar onde começar e parar.</p>
+  
+  <p><b>Primeira solução:</b></p>
+  
+  ```
+  function truncateString(str, num) {
+    if (str.length > num) {
+    return str.slice(0, num) + "...";
+  } else {
+    return str;
+  }
+}
+  ```
