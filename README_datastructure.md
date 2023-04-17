@@ -10,6 +10,7 @@
 5. [Retornar os maiores números em matrizes](#maioresnumerosemmatrizes)
 6. [Confirmando o final](#confirmeofinal)
 7. [Repetir uma string](#repetirumastring)
+8. [Truncar uma string](#truncarumastring)
 
 
 
@@ -190,7 +191,7 @@ confirmEnding("He has to give me a new name", "name");
 
 
 
-<div id="#truncar"/>
+<div id="truncarumastring"/>
 <h3>Truncar uma string</h3>
   <p>Trunque uma string (primeiro argumento) se ela for maior que o comprimento máximo da string fornecida (segundo argumento). Retorne a string truncada com <code>... </code> final. Para este desafio será necessário usar o método <code>slice()</code> e especificar onde começar e parar.</p>
   
