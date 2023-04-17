@@ -231,5 +231,5 @@ confirmEnding("He has to give me a new name", "name");
 <div id="testedevalidade"/>
 <h3>Teste de validação</h3>
   <p>Crie uma função que examine um array <b>arr</b> e retorne o primeiro elemento nele que passe em um "teste de verdade". Isso significa que, dado um elemento x, o 'teste de verdade' é aprovado se func (x) for verdadeiro. Se nenhum elemento passar no teste, retornará indefinido.</p>
-  
+    
     
