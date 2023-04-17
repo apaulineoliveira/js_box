@@ -213,3 +213,15 @@ confirmEnding("He has to give me a new name", "name");
   <li></li>
 </ul>
   
+<p><b>Segunda solução:</b></p>
+
+```
+  function truncateString(str, num) {
+  return str.length > num ? str.slice(0, num) + "..." : str;
+}
+```
+<ul>
+  <li>Esta solução é muito semelhante à solução básica. Para determinar a nova string, usamos um operador ternário. Em nossa operação ternária, se str.length for maior que num, retornamos uma nova string que é uma fatia de nossa string começando no caractere 0 e terminando em num e o '...' é anexado ao final de nossa nova string . Se str.length for menor ou igual a num, retornamos a string sem nenhum truncamento.</li>
+</ul>
+
+<p><b>Nota</b>: Para entender o código acima, você precisa entender como funciona um Operador Ternário. O Operador Ternário é frequentemente usado como um atalho para a instrução if e segue este formato: <code>condição ? expr1: expr2</code>. Se a condição for avaliada como verdadeira, o operador retornará o valor de expr1. Caso contrário retornará o valor de expr2.</p>
