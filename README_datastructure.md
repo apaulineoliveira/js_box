@@ -232,7 +232,7 @@ confirmEnding("He has to give me a new name", "name");
 <h3>Teste de validação</h3>
   <p>Crie uma função que examine um array <b>arr</b> e retorne o primeiro elemento nele que passe em um "teste de validade". Isso significa que, dado um elemento <b>x</b>, o teste de validade é aprovado se func (x) for verdadeira. Se nenhum elemento passar no teste, retornará indefinido.</p>
   
-    ```
+``````
       function findElement(arr, func) {
         let num = 0;
        
@@ -245,13 +245,11 @@ confirmEnding("He has to give me a new name", "name");
         
         return undefined;
       }
-    ```
-    
-    <p><b>Explicando passo a passo do código</b>:</p>
-    
-    <ul>
+``````
+
+<p><b>Explicando passo a passo do código</b></p>
+ <ul>
       <li>A variável <code>num</code> está sendo passada para a função, então a definimos para cada índice em nosso array (num = arr[i]);</li>
       <li>A função pré-definida já verifica cada número para nós, portanto, se for "verdadeiro", retornamos esse número;</li>
       <li>Se nenhum dos números da matriz passar no teste da função retornamos indefinido (undefined).</li> 
     </ul>
-    
