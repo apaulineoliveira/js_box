@@ -12,6 +12,7 @@
 7. [Repetir uma string](#repetirumastring)
 8. [Truncar uma string](#truncarumastring)
 9. [Teste de validação](#testedevalidade)
+10. [Valor primitivo booleano](#primitivobooleano)
 
 
 
@@ -253,3 +254,9 @@ confirmEnding("He has to give me a new name", "name");
       <li>A função pré-definida já verifica cada número para nós, portanto, se for "verdadeiro", retornamos esse número;</li>
       <li>Se nenhum dos números da matriz passar no teste da função retornamos indefinido (undefined).</li> 
     </ul>
+    
+ 
+<div id="primitivobooleano"/>
+<h3>Valor primitivo booleano</h3>
+  <p>Verifique se um valor é classificado como um primitivo booleano.<br>
+  Primitivas booleanas são verdadeiras e falsas (true e false ou true or false).</p>
