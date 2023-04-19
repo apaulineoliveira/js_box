@@ -259,10 +259,20 @@ confirmEnding("He has to give me a new name", "name");
 <div id="primitivobooleano"/>
 <h3>Valor primitivo booleano</h3>
   <p>Verifique se um valor é classificado como um primitivo booleano; Primitivas booleanas são verdadeiras e falsas (true e false ou true or false).</p>
+    
     ```
-    function booWho(bool) {
-    return typeof bool === "boolean";
-}
+     function booWho(bool) {
+          return typeof bool === "boolean";     
+     }
+     booWho(null);
+    ```
 
-booWho(null);
-```
+
+<p><b>Explicando o código:</b></p>
+  <ul>
+      <li>Usa o operador typeof para verificar se a variável é booleana. Se for, retornará verdadeiro. Caso contrário, se for qualquer outro tipo retornará false.</li>
+  </ul>
+
+
+
+
