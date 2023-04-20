@@ -274,5 +274,7 @@ confirmEnding("He has to give me a new name", "name");
   </ul>
 
 
+<h3>Case Sentence</h3>
+  <p>Retorne a string fornecida com a primeira letra de cada palavra em maiúscula. Certifique-se de que o restante da palavra esteja em letras minúsculas.</p>
 
 
