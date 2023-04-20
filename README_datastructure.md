@@ -276,5 +276,22 @@ confirmEnding("He has to give me a new name", "name");
 
 <h3>Case Sentence</h3>
   <p>Retorne a string fornecida com a primeira letra de cada palavra em maiúscula. Certifique-se de que o restante da palavra esteja em letras minúsculas.</p>
+ 
+ <p>Primeira solução - Utilizando <b>REGEX</b> </p>
 
+   ``` 
+  function titleCase(str) {
+    return str
+      .toLowerCase()
+      .replace(/(^|\s)\S/g, L => L.toUpperCase());
+}
+   ````
+<p><b>Explicando o código:</b></p>
+    <p></p>
+    <ul>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+    </ul>
 
