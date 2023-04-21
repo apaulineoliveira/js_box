@@ -287,11 +287,15 @@ confirmEnding("He has to give me a new name", "name");
 }
    ````
 <p><b>Explicando o código:</b></p>
-    <p></p>
+    <p>A solução funciona primeiro colocando todos os caracteres em letras minúsculas na string, e em seguida, apenas colocando em letras maiúsculas o primeiro caractere de cada palavra</p>
     <ul>
-       <li></li>
-       <li></li>
-       <li></li>
-       <li></li>
+       <li>Deixando toda a string minúscula usando <code>str.toLowerCase()</code></li>
+       <li>Substitua o primeiro caractere de cada palavra por maiúsculo usando <code>.replace</code></li>
+       <li>Pesquise o caractere no início de cada palavra, ou seja, corresponda a qualquer caractere após um espaço ou corresponda ao primeiro caractere de toda a string, usando o seguinte padrão:<br></li>
+    <h3>Explicação Regex:</h3>
+       <li>(\S) Encontre todos os caracteres que não sejam espaços em branco;</li>
+       <li>(^) No início da string;</li>
+       <li>(\s) Ou depois de qualquer caractere de espaço em branco</li>
+       <li>O modificador <code>g</code> procura outro padrão de palavra semelhante em toda a string e os substitui.</li>
     </ul>
 
