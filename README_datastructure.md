@@ -13,7 +13,8 @@
 8. [Truncar uma string](#truncarumastring)
 9. [Teste de validação](#testedevalidade)
 10. [Valor primitivo booleano](#primitivobooleano)
-11. [Case sentence](#case sentence)
+11. [Case sentence](#casesentence)
+12. [Slice e Splice](#slicesplice)
 
 
 
@@ -275,7 +276,7 @@ confirmEnding("He has to give me a new name", "name");
   </ul>
 
 
-<div id="case sentence"/>
+<div id="casesentence"/>
 <h3>Case Sentence</h3>
   <p>Retorne a string fornecida com a primeira letra de cada palavra em maiúscula. Certifique-se de que o restante da palavra esteja em letras minúsculas.</p>
  
@@ -301,3 +302,28 @@ confirmEnding("He has to give me a new name", "name");
        <li>O modificador <code>g</code> procura outro padrão de palavra semelhante em toda a string e os substitui.</li>
     </ul>
 
+
+
+<div id="slicesplice"/>
+<h3>Slice e Splice</h3>
+  <p>Você recebe dois arrays e um indíce; Copie cada elemento da primeira matriz para a segunda matriz, em ordem. Comece inserindo elementos no índice <code>n</code> da segunda matriz. Por fim, retorne a matriz resultante.</p>
+    <p><b>Primeira Solução</b>:</p>
+    
+    
+    function frankenSplice(arr1, arr2, n) {
+       let localArray = arr2.slice();
+       for (let i = 0; i < arr1.length; i++) {
+          localArray.splice(n, 0, arr1[i]);
+          n++;
+        }
+        return localArray;
+    }
+   
+   <p><b>Explicando o código:</b></p>
+    <ul>
+      <li>Nosso objetivo é pegar todos os elementos de arr1 e inseri-los em arr2 começando com a posição de índice n. Ao mesmo tempo, devemos garantir que nem arr nem arr2 tenham sofrido mutação.</li>
+      <li>Usando a função slice( ) podemos criar uma réplica exata de arr2 e atribuir o resultado da operação a uma variável, localArray;</li>
+      <li>Agora que temos um array no qual podemos mudar, podemos iterar em cada item do primeiro array;</li>
+      <li>Incrementamos o índice n em um. Isso garantirá que cada item de arr1 seja inserido em localArray na posição de índice adequada;</li>
+      <li>Por fim, retornamos o localArray e finalizamos a função.</li>
+    </ul>
