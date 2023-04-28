@@ -333,4 +333,11 @@ confirmEnding("He has to give me a new name", "name");
 <h3>Removendo valores falsos de uma função</h3>
   <p>Remova todos os valores falsos de uma matriz. Retorne uma nova matriz, entretanto, não modifique a matriz original.<br>Os valores falsos em js são: false, null, 0, "", undefined, and NaN. Dica: Tente converter cada valor em um booleano.</p>
   <p><b>Primeira Solução</b>:</p>
+  
+  ```
+  function bouncer(arr) {
+  return arr.filter(Boolean);
+}
+  ```
   <p><b>Explicando o código:</b></p>
+     <p>O método <code>Array.prototype.filter</code> espera uma função que retorne um valor booleano que receba um único argumento e retorne verdadeiro para o valor verdadeiro ou falso para o valor falso. Portanto, passamos a função booleana integrada.</p>
