@@ -1,6 +1,7 @@
 <p align="center">  
-  <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png" height="180" width="200">
+  <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png" height="100" width="100">
 </p>
+<br></br>
 
 <b>Guia de conteúdo</b>
 1. [Convertendo temperatura de Celsius para Fahrenheit](#celsiustofahrenheit)
@@ -327,3 +328,9 @@ confirmEnding("He has to give me a new name", "name");
       <li>Incrementamos o índice n em um. Isso garantirá que cada item de arr1 seja inserido em localArray na posição de índice adequada;</li>
       <li>Por fim, retornamos o localArray e finalizamos a função.</li>
     </ul>
+
+<div id="removendofalsos"/>
+<h3>Removendo valores falsos de uma função</h3>
+  <p>Remova todos os valores falsos de uma matriz. Retorne uma nova matriz, entretanto, não modifique a matriz original.<br>Os valores falsos em js são: false, null, 0, "", undefined, and NaN. Dica: Tente converter cada valor em um booleano.</p>
+  <p><b>Primeira Solução</b>:</p>
+  <p><b>Explicando o código:</b></p>
