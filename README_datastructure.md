@@ -375,7 +375,8 @@ confirmEnding("He has to give me a new name", "name");
   ```
   <p><b>Explicando o código:</b></p>
     <p>Conte o número de entradas que são menores que o novo valor <code>num</code>.O novo valor seria inserido após esses valores.</p>
-    
+
+<br>
     
 <div id="#igualdade"/>
 <h3>Igualdade</h3>
