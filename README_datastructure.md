@@ -349,7 +349,7 @@ confirmEnding("He has to give me a new name", "name");
 <h3>A qual índice pertence</h3>
   <p>Retorna o índice mais baixo no qual um valor (segundo argumento) deve ser inserido em um array (primeiro argumento) depois de classificado. Por exemplo, <code>getIndexToIns([1,2,3,4], 1.5)</code> deve retornar 1 porque é maior que 1 (índice 0), mas menor que 2 (índice 1). Da mesma forma, getIndexToIns([20,3,5], 19) deve retornar 2 porque, uma vez que a matriz foi classificada, ela se parecerá com [3,5,20] e 19 é menor que 20 (índice 2) e maior que 5 ( índice 1).</p>
   
-  <p><b>Primeira solução</b></p>
+  <p><b>Primeira Solução</b></p>
   
   ```
   function getIndexToIns(arr, num) {
@@ -365,5 +365,13 @@ confirmEnding("He has to give me a new name", "name");
    <p><b>Explicando o código:</b></p>
       <p>Primeiro foi classificado o array usando <code>.sort(callbackFunction)</code> para classificá-lo do menor para o maior, da esqueda para a direita. Em seguida, foi usado um loop for para comparar os itens na matriz começando pelo menor; quando um item na matriz é maior que o número com o qual estamos comparando, retornamos o índice.</p>
   
+<p><b>Segunda Solução</b></p>  
   
+  ```
+  function getIndexToIns(arr, num) {
+  return arr.filter(val => num > val).length;
+}
+  ```
+  <p><b>Explicando o código:</b></p>
+    <p>Conte o número de entradas que são menores que o novo valor <code>num</code>.O novo valor seria inserido após esses valores.</p>
   
