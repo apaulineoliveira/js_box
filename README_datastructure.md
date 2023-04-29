@@ -18,6 +18,7 @@
 12. [Slice e Splice](#slicesplice)
 13. [Removendo valores falsos de uma função](#removendofalsos)
 14. [A qual índice pertence](#qualindicepertence)
+15. [Igualdade](#igualdade)
 
 
 
@@ -374,4 +375,9 @@ confirmEnding("He has to give me a new name", "name");
   ```
   <p><b>Explicando o código:</b></p>
     <p>Conte o número de entradas que são menores que o novo valor <code>num</code>.O novo valor seria inserido após esses valores.</p>
+    
+    
+<div id="#igualdade"/>
+<h3>Igualdade</h3>
+  <p>Retorne <code>true</code> se a string no primeiro elemento do array contiver todas as letras da string no segundo elemento do array. Por exemplo, <code>["hello", "Hello"]</code> deve retornar <code>true</code> porque todas as letras da segunda string estão presentes na primeira, ignorando maiúsculas e minúsculas. Os argumentos <code>["hello", "hey"]</code> devem retornar <code>false</code> porque a string hello não contém um y. Por fim, <code>["Alien", "line"]</code> deve retornar verdadeiro porque todas as letras na linha estão presentes em Alien.</p>
   
