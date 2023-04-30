@@ -382,3 +382,20 @@ confirmEnding("He has to give me a new name", "name");
 <h3>Igualdade</h3>
   <p>Retorne <code>true</code> se a string no primeiro elemento do array contiver todas as letras da string no segundo elemento do array. Por exemplo, <code>["hello", "Hello"]</code> deve retornar <code>true</code> porque todas as letras da segunda string estão presentes na primeira, ignorando maiúsculas e minúsculas. Os argumentos <code>["hello", "hey"]</code> devem retornar <code>false</code> porque a string hello não contém um y. Por fim, <code>["Alien", "line"]</code> deve retornar verdadeiro porque todas as letras na linha estão presentes em Alien.</p>
   
+  <p>Primeira Solução</p>
+  
+  ````
+  function mutation(arr) {
+    const test = arr[1].toLowerCase();
+    const target = arr[0].toLowerCase();
+    
+    for (let i = 0; i < test.length; i++) {
+      if (target.indexOf(test[i]) <0) return false; 
+    }
+    return true;
+  }
+  ````
+  
+  <p><b>Explicando o código</b></p>
+      <p>Primeiro, tornamos as duas strings no array minúsculas (.toLowerCase()).<code>test</code> manterá o que estamos procurando em <code>target</code>. Em seguida, percorremos nossos caracteres de test e, se algum deles não for encontrado, retornamos <code>false</code>. Se todos forem encontrados, o loop terminará sem retornar nada e retornaremos <code>true</code>.</p>
+  
