@@ -405,4 +405,16 @@ confirmEnding("He has to give me a new name", "name");
  <div id="subarrays"/>
  <h3>Sub-grupos de arrays</h3>
     <p>Escreva uma função que divida um array (primeiro argumento) em grupos do tamanho do comprimento (segundo argumento) e os retorne como um array <b>bidimensional</b>.</p>
-    <p>Nosso objetivo para este algoritmo é dividir arr (primeiro argumento) em pedaços menores de arrays com o comprimento fornecido por size (segundo argumento). Existem 4 verificações verdes (objetivos) que nosso código precisa passar para concluir este algoritmo:</p>
+    <p>Nosso objetivo para este algoritmo é dividir arr (primeiro argumento) em pedaços menores de arrays com o comprimento fornecido por size (segundo argumento). Existem 4 verificações verdes (objetivos) que nosso código precisa passar para concluir este algoritmo.
+   <br>
+      <ol>
+        1.  <code>(['a', 'b', 'c', 'd'], 2)</code> <b>is expected to be</b> <code>[['a', 'b'], ['c', 'd']]</code><br> 
+        2.  <code>([0, 1, 2, 3, 4, 5], 3)</code> <b>is expected to be</b> <code>[[0, 1, 2], [3, 4, 5]]</code><br> 
+        3.  <code>([0, 1, 2, 3, 4, 5], 2)</code> <b>is expected to be</b> <code>[[0, 1], [2, 3], [4, 5]]</code>
+      </ol>
+    </p>
+
+    
+    
+    
+   
