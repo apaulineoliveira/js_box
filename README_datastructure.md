@@ -19,6 +19,7 @@
 13. [Removendo valores falsos de uma função](#removendofalsos)
 14. [A qual índice pertence](#qualindicepertence)
 15. [Igualdade](#igualdade)
+16. [Sub-grupos de arrays](#subarrays)
 
 
 
