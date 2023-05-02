@@ -400,3 +400,9 @@ confirmEnding("He has to give me a new name", "name");
   <p><b>Explicando o código</b></p>
       <p>Primeiro, tornamos as duas strings no array minúsculas (.toLowerCase()).<code>test</code> manterá o que estamos procurando em <code>target</code>. Em seguida, percorremos nossos caracteres de test e, se algum deles não for encontrado, retornamos <code>false</code>. Se todos forem encontrados, o loop terminará sem retornar nada e retornaremos <code>true</code>.</p>
   
+ 
+ 
+ <div id="subarrays"/>
+ <h3>Sub-grupos de arrays</h3>
+    <p>Escreva uma função que divida um array (primeiro argumento) em grupos do tamanho do comprimento (segundo argumento) e os retorne como um array <b>bidimensional</b>.</p>
+    <p>Nosso objetivo para este algoritmo é dividir arr (primeiro argumento) em pedaços menores de arrays com o comprimento fornecido por size (segundo argumento). Existem 4 verificações verdes (objetivos) que nosso código precisa passar para concluir este algoritmo:</p>
