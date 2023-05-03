@@ -414,19 +414,50 @@ confirmEnding("He has to give me a new name", "name");
     
 <p><b>Primeira solução<b>:</p>
   
-  `````
+  ```
   function chunkArrayInGroups(arr, size) {
     const newArr = [];
-    let i = 0;
-  
+    let i = 0;  
     while (i < arr.length) {
         newArr.push(arr.slice(i, i + size));
         i += size;
     }
     return newArr;
   }
-  chunkArrayInGroups(["a", "b", "c", "d"], 2);                       
-  `````
+  chunkArrayInGroups(["a", "b", "c", "d"], 2);   
+  }
+  ```
+                          
+  <p><b>Explicando o código</b></p> 
+    <ul>
+      <li>Em primeiro lugar, criamos duas variáveis. <code>newArr</code> é uma matriz vazia para a qual iremos enviar. Também temos a variável <code>i</code> definida como zero, para uso em nosso loop while;</li>
+      <li>Nosso loop while faz um loop até que <code>i</code> seja igual ou maior que o comprimento da matriz em nosso teste;</li>
+      <li>Dentro de nosso loop, enviamos para o array <code>newArr</code> usando <code>arr.slice(i, i+size)</code>. Pela primeira vez, ele faz um loop, parecerá algo como: newArr.push(arr.slice(1, 1+2));</li>
+      <li>Depois de empurrar para newArr, adicionamos a variável de tamanho <code>i</code>;</li>
+      <li>Por fim, retornamos o valor de newArr.</li>
+      <li></li>
+   </ul>
 
+<p><b>Segunda solução</b></p>
+
+  ```
+  function chunkArrayInGroups(arr, size) {
+     const newArr = [];
+     
+     while (arr.length > 0) {
+        newANosso loop while faz um loop até que o comprimento da matriz em nosso teste não seja 0;rr.push(arr.splice(0, size));
+     }
+     return newArr;
+  }
+  ```
+  
+ <p><b>Explicando o código</b></p>
+  <ul>
+     <li>Em primeiro lugar, criamos uma variável. <code>newArr</code> é uma matriz vazia para a qual iremos enviar;</li>
+     <li>Nosso loop while faz um loop até que o comprimento da matriz em nosso teste não seja 0;</li>
+     <li>Dentro do nosso loop, enviamos para o array newArr usando arr.splice(0, size);</li>
+     <li>Para cada iteração do loop while, ele exclui o tamanho do número de elementos da frente de arr e os envia como uma matriz para newArr;</li>
+     <li>Por fim, retornamos o valor de newArr.</li>
+  </ul>
     
    
