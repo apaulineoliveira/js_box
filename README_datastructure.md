@@ -441,14 +441,13 @@ confirmEnding("He has to give me a new name", "name");
 <p><b>Segunda solução</b></p>
 
   ```
-  function chunkArrayInGroups(arr, size) {
-     const newArr = [];
-     
-     while (arr.length > 0) {
-        newANosso loop while faz um loop até que o comprimento da matriz em nosso teste não seja 0;rr.push(arr.splice(0, size));
-     }
-     return newArr;
+ function chunkArrayInGroups(arr, size) {
+  const newArr = [];
+  while (arr.length > 0) {
+    newArr.push(arr.splice(0, size));
   }
+  return newArr;
+}
   ```
   
  <p><b>Explicando o código</b></p>
